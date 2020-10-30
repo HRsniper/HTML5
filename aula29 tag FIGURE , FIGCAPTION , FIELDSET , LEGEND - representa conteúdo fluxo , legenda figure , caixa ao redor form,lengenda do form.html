@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 29 Tag < EMBED>
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        img:hover{
+            transform: rotate(360deg);
+            transition: 2s;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="links">
+        <h5>Links de Referência:</h5>
+        <p>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank"><abbr title="W3 Schools">HTML
+                    Tags</abbr></a>
+            <a href="https://www.w3.org/2009/cheatsheet" target="_blank"><abbr title="W3C">HTML Tags
+                    Cheatsheet</abbr></a>
+        </p>
+    </div>
+
+    <h4>A tag < figure> especifica conteúdo independente, como ilustrações, diagramas, fotos, listagens de código etc.
+        Embora o conteúdo do elemento < figure> esteja relacionado ao fluxo principal, sua posição é independente do
+        fluxo principal e, se removido, não deve afetar o fluxo do documento.
+    </h4>
+
+    <h4>A tag < fieldset> é usada para agrupar elementos relacionados em um formulário.
+        A tag < fieldset> desenha uma caixa ao redor dos elementos relacionados.
+        Dica: A tag < legend> define uma legenda para o elemento < fieldset>.
+    </h4>
+    <h4>
+        A tag < legend> define uma legenda para o elemento < fieldset> .
+    </h4>
+
+    <h4>A tag < figcaption> define uma legenda para um elemento < figure> .
+        O elemento < figcaption> pode ser colocado como o primeiro ou o último filho do elemento < figure>.  
+    </h4>
+
+    <figure>
+        <img src="Google_Chrome_icon.svg" alt="Google_Chrome_icon" style="width: 100px;">
+        <figcaption>Icone do Google</figcaption>
+    </figure>
+
+
+    <form action="#">
+        <fieldset>
+         <legend>Personalia:</legend>
+         <label for="fname">First name:</label>
+         <input type="text" id="fname" name="fname"><br><br>
+         <label for="lname">Last name:</label>
+         <input type="text" id="lname" name="lname"><br><br>
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email"><br><br>
+         <label for="birthday">Birthday:</label>
+         <input type="date" id="birthday" name="birthday"><br><br>
+         <input type="submit" value="Submit">
+        </fieldset>
+       </form>
+
+</body>
+
+</html>
+<!--
+display: block
+categoria: fluxo e seçao
+contido : fluxo
+filhos: null
+
+ -->
+ <!-- 
+     fieldset
+disabled: disabled - Especifica que um grupo de elementos de formulário relacionados deve ser desativado.
+form: form_id - Especifica a qual formulário o fieldset pertence.
+name: text - Especifica um nome para o conjunto de campos.
+  -->

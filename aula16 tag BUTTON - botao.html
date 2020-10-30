@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 16 Tag < BUTTON ></title>
+
+    <style>
+        button {
+            background-color: rgb(105, 50, 155);
+            color: rgb(255, 255, 255);
+            width: 45px;
+            height: 25px;
+            border: 5px solid rgb(75, 30, 115);
+            border-radius: 5px;
+        }
+        
+        button:hover {
+            background-color: #69329b;
+            color: rgb(170,85,255);
+            width: 50px;
+            height: 30px;
+            border: 5px solid rgb(170, 85, 255);
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <a href="https://www.w3schools.com/tags/default.asp">HTML Tags</a>
+    <br>
+    <a href="https://www.w3.org/2009/cheatsheet">HTML Tags Cheatsheet</a>
+    <br><br>
+
+    <h4> tag button. O elemento < button> representa um botão identificado por seu conteúdo, que pode der inserido em
+        qualquer lugar e em qualquer quantidade na página. O elemento é um botão. O atributo "type" controla o
+        comportamento do botão quando ele é ativado</h4>
+
+    <button type="button" onclick="alert('botão clicádo');">OK</button>
+
+<!-- 
+display: inline
+categoria: fluxo e frazeado e interativo
+contido:frazeado
+filhos:frazeado
+
+atribuiçoes
+globais tambem
+Atributo      Valor     Descrição
+autofocus   autofocus   Especifica que um botão deve obter foco automaticamente quando a página é carregada. 
+
+disabled    disabled    Especifica que um botão deve ser desativado.
+
+form        form_id     Especifica a qual formulário o botão pertence.
+
+formaction    URL       Especifica para onde enviar os dados do formulário quando um formulário é enviado. Somente para o type="submit".
+
+formenctype    application/x-www-form-urlencoded    Padrão. Todos os caracteres serão codificados antes do envio.
+    ↑          multipart/form-data                  Nenhum caractere é codificado (use isso quando você estiver usando formulários com controle de upload de arquivo).
+    ↑          text/plain                           Os espaços são convertidos em símbolos "+", mas nenhum caractere é codificado.
+    ↑
+Especifica como os dados do formulário devem ser codificados antes de enviá-los para um servidor. Somente para o type="submit".
+
+formmethod    get
+              post      Especifica como enviar os dados do formulário (qual método HTTP usar). Somente para o type="submit".
+
+formnovalidate  formnovalidate  Especifica que os dados do formulário não devem ser validados no envio. Somente para o type="submit".
+
+formtarget    _blank    Carrega a resposta em uma nova janela / guia.
+    ↑         _self     Carrega a resposta no mesmo quadro (este é o padrão).
+    ↑         _parent   Carrega a resposta no quadro pai.
+    ↑         _top      Carrega a resposta em todo o corpo da janela.
+    ↑         framename Carrega a resposta em um iframe nomeado.
+Especifica onde exibir a resposta após o envio do formulário. Somente para o type="submit".
+
+name          nome      Especifica um nome para o botão.
+
+type	      button    O botão é um botão clicável.
+ ↑            submit    O botão é um botão de envio (envia dados do formulário).
+ ↑            reset     O botão é um botão de reset (redefine os dados do formulário para seus valores iniciais).
+Especifica o tipo de botão.
+
+value         text      Especifica um valor inicial para o botão.
+ -->
+
+</body>
+
+</html>

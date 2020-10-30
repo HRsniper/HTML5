@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 24 Tag < DIALOG></title>
+
+    <script>
+        function abrirDialog() {
+            document.getElementById("btnabrirfechar").innerHTML="Fechar";
+            document.getElementById("d1").setAttribute("open", "");
+        }
+
+        function fecharDialog() {
+            document.getElementById("btnabrirfechar").innerHTML="Abrir";
+            document.getElementById("d1").removeAttribute("open");
+        }
+
+        function controlaDialog(msg) {
+            if (document.getElementById("d1").open) {
+                fecharDialog();
+            } else {
+                abrirDialog();
+                document.getElementById("msg").innerHTML=msg;
+            }
+        }
+    </script>
+
+    <style>
+        dialog {
+            padding: 0;
+            border: 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #000000;
+            flex-direction: column;
+        }
+        .dt {
+            background-color: #eeeeee;
+            border-top-left-radius: inherit;
+            border-top-right-radius: inherit;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #aaa;
+            height: 40px;
+        }
+        .dc {
+            background-color: #cdcdcd;
+            padding: 5px;
+        }
+        .dr {
+            background-color: #eeeeee;;
+            border-bottom-left-radius: inherit;          
+            border-bottom-right-radius: inherit;
+            padding: 5px;          
+            border-top: 1px solid #aaaaaa;
+        }
+        #btnfechar , #btnabrirfechar  {
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+            cursor: pointer;
+            outline: none;
+            box-shadow: 0 0 5px black;
+        }
+        #btnfechar:hover , #btnabrirfechar:hover {
+            background-color: rgb(125, 125, 125);
+            transition: 0.5s;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>
+        <a href="https://www.w3schools.com/tags/default.asp">HTML Tags</a>
+        <br>
+        <a href="https://www.w3.org/2009/cheatsheet">HTML Tags Cheatsheet</a>
+    </p>
+
+    <h4> A tag dialog é nativa do HTML5 é mostra e ou permite gerenciar a exibição de uma caixa de diálogo.</h4>
+
+
+    <button id="btnabrirfechar" onclick="controlaDialog('texto corpo')">Abrir</button>
+    
+    <dialog id="d1" open>
+        <div class="dt">
+            <h2>caixa de dialogo</h2>
+        </div>
+        <div class="dc">
+            <p>trhrhhrtyrtyrtyuyttyudyuyuiuyiuyidyudyturthrthrhr</p>
+            <p>fewwfwfrtymrtyumyrtymwefwef</p>
+            <p>fewwfwfrtymrtyumyrtymwefwef</p>
+            <p id="msg"></p>
+        </div>
+        <div class="dr">
+            <button id="btnfechar" onclick="fecharDialog()">Fechar</button>
+        </div>
+    </dialog>
+
+    <!-- 
+    categoria:fluxo
+    contido:fluxo
+    filhos:qualquer elemento
+
+    Atributo  Valor  Descrição
+    open      open   Especifica que o elemento de diálogo está ativo e que o usuário pode interagir com ele.
+     -->
+
+</body>
+
+</html>

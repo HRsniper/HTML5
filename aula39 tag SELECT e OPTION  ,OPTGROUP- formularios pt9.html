@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 32 Form</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        form {
+            background-color: hsl(0, 0%, 95%);
+        }
+
+        .input {
+            display: block;
+        }
+
+        .marginT {
+            margin-top: 10px;
+        }
+
+        .marginB {
+            margin-bottom: 10px;
+        }
+
+        .image {
+            width: 40px;
+        }
+        option {
+            background-color: violet;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="links">
+        <h5>Links de Referência:</h5>
+        <p>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank"><abbr title="W3 Schools">HTML
+                    Tags</abbr></a>
+            <a href="https://www.w3.org/2009/cheatsheet" target="_blank"><abbr title="W3C">HTML Tags
+                    Cheatsheet</abbr></a>
+        </p>
+    </div>
+
+    <h4>
+        O elemento < select> é usado para criar uma lista suspensa.
+        As marcas < option> dentro do elemento < select> definem as opções disponíveis na lista.
+        Dica: O elemento < select> é um controle de formulário e pode ser usado em um formulário para coletar entrada do usuário.
+    </h4>
+    <h4>
+        A tag < option> define uma opção em uma lista de seleção.
+        Os elementos < option> vão para dentro de um elemento < select> ou < datalist> .
+        Nota: A tag < option> pode ser usada sem nenhum atributo, mas você geralmente precisa do atributo value , que indica o que é enviado ao servidor.
+        Dica: Se você tiver uma longa lista de opções, poderá agrupar opções relacionadas com a tag < optgroup> .
+    </h4>
+    <h4>
+        A tag < optgroup> é usada para agrupar opções relacionadas em uma lista suspensa.
+        Se você tiver uma longa lista de opções, é mais fácil gerenciar grupos de opções relacionadas para um usuário.
+    </h4>
+
+    <br>
+
+    <form action="#" method="get">
+        <label for="forCar">Selecione:</label>
+        <select name="selecionar" id="forCar" multiple size="2">
+            <option value="Golv1.8">Gol</option>
+            <option value="Golv1.8">Gol2</option>
+            <option value="Golv1.8">Gol3</option>
+        </select>
+
+        <select name="sec2" id="forCar">
+            <optgroup label="grupo1">
+                <option value="estrada2">strada</option>
+                <option value="estrada1">strada2</option>
+                <option value="estrada3">strada3</option>
+            </optgroup>
+            <optgroup label="grupo2">
+                <option value="estrada2">strada5</option>
+                <option value="estrada1">strada6</option>
+                <option value="estrada3">strada7</option>
+            </optgroup>
+        </select>
+
+        <input class="input marginT" type="submit">
+    </form>
+
+    <br><br>
+
+    <form action="#" id="carform">
+        <label for="fname">Firstname:</label>
+        <input type="text" id="fname" name="fname">
+        <input type="submit">
+    </form>
+            
+    <label for="cars">Choose a car:</label>
+      <select id="cars" name="carlist" form="carform">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+      </select>
+
+</body>
+
+</html>
+<!-- 
+    select
+autofocus: autofocus - Especifica que a lista suspensa deve obter automaticamente o foco quando a página é carregada.
+disabled: disabled - Especifica que uma lista suspensa deve ser desativada.
+form: form_id - Define a qual formulário a lista suspensa pertence.
+multiple: multiple - Especifica que várias opções podem ser selecionadas de uma só vez.
+name: name - define um nome para a lista suspensa.
+required: required - Especifica que o usuário deve selecionar um valor antes de enviar o formulário.
+size: number - define o número de opções visíveis em uma lista suspensa.
+-->
+<!-- 
+    option
+disabled: disabled - Especifica que uma opção deve ser desativada.
+label: text - especifica um rótulo mais curto para uma opção.substitui o texto escrito.
+selected: selected- Especifica que uma opção deve ser pré-selecionada quando a página carregar.
+value: text - Especifica o valor a ser enviado para um servidor.
+-->
+<!-- 
+    optgroup
+disabled: disabled - Especifica que um grupo de opções deve ser desativado.
+label: text -Especifica um rótulo para um grupo de opções.
+ -->

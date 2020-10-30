@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 32 Form</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        form {
+            background-color: hsl(0, 0%, 95%);
+        }
+
+        .input {
+            display: block;
+        }
+
+        .marginT {
+            margin-top: 10px;
+        }
+
+        .marginB {
+            margin-bottom: 10px;
+        }
+
+        .image {
+            width: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="links">
+        <h5>Links de Referência:</h5>
+        <p>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank"><abbr title="W3 Schools">HTML
+                    Tags</abbr></a>
+            <a href="https://www.w3.org/2009/cheatsheet" target="_blank"><abbr title="W3C">HTML Tags
+                    Cheatsheet</abbr></a>
+        </p>
+    </div>
+
+    <br>
+
+    <form action="#" name="form_FORM" method="GET">
+        <label for="forIMAGE">Image:</label>
+        <input class="input marginB image" type="image" src="Google_Chrome_icon.svg" alt="Enviarimage" name="form_IMAGE" id="forIMAGE">
+        <br>
+        <label for="forEMAIL">Email:</label>
+        <input class="input marginB" type="email" name="form_EMAIL" id="forEMAIL">
+        <br>
+        <label for="forCOLOR">Color:</label>
+        <input class="input marginB" type="color" name="form_COLOR" id="forCOLOR">
+    </form>
+
+
+</body>
+
+</html>
+<!-- 
+    input type
+image: define uma imagem como o botão enviar.o caminho da imagen é difinido pelo atributo src
+color: define um seletor de cores.
+email: define um campo para um endereço de email.
+
+value :texto a ser mostrado no navegador para o batao
+O atributo value especifica o valor de um elemento <input>.
+O atributo value é usado de maneira diferente para diferentes tipos de entrada:
+Para "button", "reset" e "submit" - define o texto no botão
+Para "text", "password" e "hidden" - define o valor inicial (padrão) do campo de entrada
+Para "checkbox", "radio", "image" - define o valor associado à entrada (este também é o valor enviado no envio)
+Nota: O atributo value não pode ser usado com <input type = "file">.
+ -->

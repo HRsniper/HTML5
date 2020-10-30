@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 83 Tag < video>
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="HRsniper">
+
+</head>
+
+<body>
+
+    <div id="links">
+        <h5>Links de Referência:</h5>
+        <p>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank"><abbr title="W3 Schools">HTML
+                    Tags</abbr></a>
+            <a href="https://www.w3.org/2009/cheatsheet" target="_blank"><abbr title="W3C">HTML Tags
+                    Cheatsheet</abbr></a>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/" target="_blank"><abbr
+                    title="Mozilla Dev">Tags Mozilla Dev</abbr></a>
+        </p>
+    </div>
+
+    <h4>
+        A
+        < track>tag especifica faixas de texto para elementos de mídia (< audio> e < video>).
+        Este elemento é usado para especificar legendas, arquivos de legenda ou outros arquivos que contêm
+        texto, que devem estar visíveis quando a mídia estiver sendo reproduzida.
+    </h4>
+
+    <video src="Matrix - 18977.mp4" width="300" height="" autoplay loop controls>
+        <track kind="subtitles" src="legenda.vtt" srclang="pt" label="Legenda">
+        <track kind="subtitles" src="legenda.vtt" srclang="pt" label="Legenda2">
+    </video>
+        
+    <video controls autoplay width="300" height="" loop>
+            <source src="Matrix - 18977.mp4" type="video/mp4">
+            <track default src="legenda.vtt" label="Legenda">
+    </video>
+
+    <audio src="Fate Grand Order Zettai Majuu Sensen Babylonia OST Tell me - milet.mp3" controls> 
+        <track kind="subtitles" src="legenda.vtt" srclang="pt" label="Legenda">
+    </audio>
+
+</body>
+
+</html>
+
+<!--
+ul
+     display: block
+     categoria: fluxo
+     contido: fluxo
+     filhos: 
+-->
+<!-- 
+default: default-Especifica que a faixa deve ser ativada se as preferências do usuário não indicarem que outra faixa seria mais apropriada.
+
+kind:       captions - A faixa define a tradução do diálogo e dos efeitos sonoros (adequados para usuários surdos).
+            capters - A faixa define os títulos dos capítulos (adequados para a navegação no recurso de mídia).
+            descriptions - A faixa define uma descrição textual do conteúdo do vídeo (adequado para usuários cegos).
+            metadata -A faixa define o conteúdo usado pelos scripts. Não visível para o usuário.
+            subtitles - A faixa define legendas, usadas para exibir legendas em um vídeo.
+Especifica o tipo de faixa de texto.
+
+label: text- Especifica o título da faixa de texto.
+
+src: URL - obrigatório. Especifica o URL do arquivo de trilha.
+
+srclang: language_code-Especifica o idioma dos dados do texto da faixa (obrigatório se kind = "subtitles").
+ -->

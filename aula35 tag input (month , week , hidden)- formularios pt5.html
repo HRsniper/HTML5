@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 32 Form</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        form {
+            background-color: hsl(0, 0%, 95%);
+        }
+
+        .input {
+            display: block;
+        }
+
+        .marginT {
+            margin-top: 10px;
+        }
+
+        .marginB {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="links">
+        <h5>Links de Referência:</h5>
+        <p>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank"><abbr title="W3 Schools">HTML
+                    Tags</abbr></a>
+            <a href="https://www.w3.org/2009/cheatsheet" target="_blank"><abbr title="W3C">HTML Tags
+                    Cheatsheet</abbr></a>
+        </p>
+    </div>
+
+    <br>
+
+    <form action="#" name="form_FORM" method="GET">
+        <label for="forMES">Mês:</label>
+        <input class="input marginB" type="month" name="form_MES" id="forMES">
+        <input class="marginB" type="submit" value="Enviar">
+        <br>
+        <label for="forSEMANA">SEMANA:</label>
+        <input class="input marginB" type="week" name="form_SEMANA" id="forSEMANA">
+        <br>
+        <input type="hidden" id="forHIDDEN" name="ValorId" value="3487">
+    </form>
+
+
+</body>
+
+</html>
+<!-- 
+    input type
+hidden: define um campo de entrada oculto.Nota: Embora o valor não seja exibido para o usuário no conteúdo da página, ele é visível (e pode ser editado)
+week: define um controle de semana e ano (sem fuso horário).
+month: define um controle de mês e ano (sem fuso horário)."YYYY-MM".
+
+value :texto a ser mostrado no navegador para o batao
+O atributo value especifica o valor de um elemento <input>.
+O atributo value é usado de maneira diferente para diferentes tipos de entrada:
+Para "button", "reset" e "submit" - define o texto no botão
+Para "text", "password" e "hidden" - define o valor inicial (padrão) do campo de entrada
+Para "checkbox", "radio", "image" - define o valor associado à entrada (este também é o valor enviado no envio)
+Nota: O atributo value não pode ser usado com <input type = "file">.
+ -->

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 17 < CANVAS> </title>
+
+    <style>
+        canvas {
+            border: 1px solid #000000;
+        }
+    </style>
+
+    <script>
+        function grafico(){
+            var canvas = document.getElementById('c_canvas');
+            var linha = canvas.getContext('2d');
+            linha.fillRect(25,10,150,100);
+        }
+    </script>
+
+</head>
+
+<body>
+    <a href="https://www.w3schools.com/tags/default.asp">HTML Tags</a>
+    <br>
+    <a href="https://www.w3.org/2009/cheatsheet">HTML Tags Cheatsheet</a>
+    <br><br>
+
+    <h4>
+        Usado para desenhar gráficos em tempo real, via script (geralmente JavaScript).
+        tag canvas. O elemento canvas fornece scripts com uma tela de bitmap dependente de resolução, que pode ser usada
+        para renderizar gráficos, gráficos de jogos, arte ou outras imagens visuais em tempo real, em Javascript.
+    </h4>
+
+    <canvas id="c_canvas" width="500px" height="500px"></canvas>
+    <script>grafico()</script>
+
+<!--
+display: block
+categoria: fluxo , fraseado e incorporado
+contido: onde o incorporado é esperado
+Filhos: transparentes
+
+Atributos
+Atributo    Valor   Descrição
+height      pixels  Especifica a altura da tela
+width       pixels  Especifica a largura da tela
+ -->
+
+</body>
+
+</html>

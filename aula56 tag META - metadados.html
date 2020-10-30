@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 56 Tag < META>
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="HRsniper">
+    <meta name="description" content="pagina de aprendizagem">
+    <meta name="keywords" content="HTML, CSS, C++, JavaScript">
+    <meta http-equiv="refresh" content="10">
+    <meta name="robot" content="index">
+    <meta name="copyright" content="2020 HRsniper">
+    <meta name="rating" content="general">
+    <meta http-equiv="pragma" content="public">
+
+</head>
+
+<body>
+
+    <div id="links">
+        <h5>Links de Referência:</h5>
+        <p>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank"><abbr title="W3 Schools">HTML
+                    Tags</abbr></a>
+            <a href="https://www.w3.org/2009/cheatsheet" target="_blank"><abbr title="W3C">HTML Tags
+                    Cheatsheet</abbr></a>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/meta" target="_blank"><abbr title="Mozilla Dev">Tag Meta Mozilla</abbr></a>
+        </p>
+    </div>
+
+    <h4>
+        tags meta. Uma das funcionalidades das Meta Tags é auxiliar os mecanismos de busca a encontrarem o seu site,
+        isso porque são elas que dão um pequeno resumo sobre o que será encontrado na sua página, sendo assim uma forma
+        de indexar o conteúdo web disponível, mas essas tags não se resumem apenas a melhoria para mecanismos de busca,
+        veremos que existem Meta Tags com funções mais complexas.
+        Os meta-elementos geralmente são usados ​​para especificar a descrição da página, as palavras-chave, o autor do documento, a última modificação e outros metadados.
+        Nota: as tags < meta> sempre ficam dentro do elemento < head>.
+    </h4>
+    <p>
+        O HTML5 introduziu um método para permitir que os web designers assumam o controle sobre a viewport, por meio da tag < meta>.
+        A janela de visualização é a área visível do usuário de uma página da web. Varia de acordo com o dispositivo e será menor em um telefone celular do que na tela do computador.
+        Você deve incluir o seguinte elemento de viewport < meta> em todas as suas páginas da web:
+        <code>< meta name="viewport" content="width=device-width, initial-scale=1.0"></code>
+        Um elemento de viewport < meta> fornece ao navegador instruções sobre como controlar as dimensões e a escala da página.
+        A parte width = width do dispositivo define a largura da página para seguir a largura da tela do dispositivo (que variará dependendo do dispositivo).
+        A parte inicial-scale = 1.0 define o nível de zoom inicial quando a página é carregada pela primeira vez pelo navegador.
+        <br>
+        Exemplo 1 - Defina palavras-chave para mecanismos de pesquisa:
+        <code>< meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript"></code>
+        <br>
+        Exemplo 2 - Defina uma descrição da sua página da web:
+        <code>< meta name="description" content="Free Web tutorials on HTML and CSS"></code>
+        <br>
+        Exemplo 3 - Defina o autor de uma página:
+        <code>< meta name="author" content="John Doe"></code>
+        <br>
+        Exemplo 4 - Atualize o documento a cada 30 segundos:
+        <code>< meta http-equiv="refresh" content="30"></code>
+        <br>
+        Exemplo 5 - Configurando a janela de visualização para tornar seu site com boa aparência em todos os dispositivos:
+        <br>
+        <code>< meta name="viewport" content="width=device-width, initial-scale=1.0"></code>
+    </p>
+
+</body>
+
+</html>
+<!--
+     display: NULL
+     categoria: metadados
+     contido: head
+     filhos: NULL
+ -->
+<!-- 
+charset:    character_set    Especifica a codificação de caracteres para o documento HTML.
+
+content:    text    Fornece o valor associado ao atributo http-equiv ou name.
+
+http-equiv:    content-type(obsoleto usa charset)
+               default-style
+               refresh
+               pragma
+               expires
+Fornece um cabeçalho HTTP para as informações/valor do atributo content.
+
+name:    application-name    Especifica o nome do aplicativo Web que a página representa.
+         author    Especifica o nome do autor do documento.
+         description    Especifica uma descrição da página. Os mecanismos de pesquisa podem pegar essa descrição para mostrar com os resultados das pesquisas.
+         generator    Especifica um dos pacotes de software usados para gerar o documento (não usado nas páginas de autoria manual).
+         keywords    Especifica uma lista de palavras-chave separadas por vírgula - relevante para a página (informa aos mecanismos de pesquisa sobre o que é a página).Dica: sempre especifique palavras-chave (necessárias pelos mecanismos de pesquisa para catalogar a página).
+         viewport    Controla a janela de visualização (a área visível do usuário de uma página da Web). A janela de visualização varia de acordo com o dispositivo.
+         robots     Especifica informações para que o robô possa indexar sua página
+         googlebot    é uma forma de comunicação direta com o robô do Google
+         REVISIT-AFTER     Utilizado para comunicar-se com os servidores de proxy afim de dizer de quanto em quanto tempo a página deve ser revisitada para refazer o cache.content com os dias("15 days")
+         rating    Essa tag é útil para identificar a censura apropriada da página.  
+         copyright
+Especifica um nome para os metadados.
+
+
+content para name robots
+All: Valor default, significa vazio, o robô de busca não recebe nenhuma informação.
+Index: Os robôs de busca podem incluir a página normalmente.
+Follow: Robôs podem indexar a página e ainda seguir os links para outras páginas que ela contém.
+NoIndex:Os links podem ser seguidos, mas a página não é indexada.
+NoFollow: A página é indexada, mas os links não são seguidos.
+None: Os robôs podem ignorar a página.
+NoArchive (Apenas Google): A página não é arquivada.
+
+content para name pragma ou cache-control(mais antiga nao usada)
+Public: Os dados da página podem ser armazenados de forma compartilhada, isto é, será utilizado por diferentes usuários de um mesmo browser.
+Private: É o contrário de public, o cache é armazenado para um específico usuário.
+No-Cache: A página não é armazenada em Cache.
+No-Store: É feito um cache temporário, a página não é arquivada.
+
+General: Para qualquer idade
+14 years: Censura 14 anos
+Mature: Para pessoas acima de 18 anos
+ -->

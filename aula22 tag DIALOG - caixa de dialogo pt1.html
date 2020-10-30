@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 22 Tag < DIALOG > </title>
+
+    <script>
+        function abrirDialog() {
+            document.getElementById("d1").setAttribute("open","");
+        }
+        function fecharDialog() {
+            document.getElementById("d1").removeAttribute("open");
+        }
+    </script>
+
+</head>
+<body>
+    <p>
+        <a href="https://www.w3schools.com/tags/default.asp">HTML Tags</a>
+        <br>
+        <a href="https://www.w3.org/2009/cheatsheet">HTML Tags Cheatsheet</a>
+    </p>
+
+    <h4> A tag dialog é nativa do HTML5 é mostra e ou permite gerenciar a exibição de uma caixa de diálogo.</h4>    
+
+
+    <button onclick="abrirDialog()">abrir</button>
+    <button onclick="fecharDialog()">fechar</button>
+    <dialog id="d1" open><p> jjukk7tk7tk</p></dialog>
+
+    <!-- 
+    categoria:fluxo
+    contido:fluxo
+    filhos:qualquer elemento
+
+    Atributo  Valor  Descrição
+    open      open   Especifica que o elemento de diálogo está ativo e que o usuário pode interagir com ele.
+     -->
+
+</body>
+</html>

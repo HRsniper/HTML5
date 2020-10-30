@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 51 Tag < IMG>
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="HRsniper">
+</head>
+
+<body>
+
+    <div id="links">
+        <h5>Links de Referência:</h5>
+        <p>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank"><abbr title="W3 Schools">HTML
+                    Tags</abbr></a>
+            <a href="https://www.w3.org/2009/cheatsheet" target="_blank"><abbr title="W3C">HTML Tags
+                Cheatsheet</abbr></a>
+            </p>
+    </div>
+
+    <h4>
+        A tag < img> define uma imagem em uma página HTML.
+        A tag < img> possui dois atributos obrigatórios: src e alt.
+        Nota: As imagens não são tecnicamente inseridas em uma página HTML, as imagens são vinculadas às páginas
+        HTML. A tag < img> cria um espaço de espera para a imagem referenciada.
+    </h4>
+
+    <img src="Google_Chrome_icon.svg" alt="Google_Chrome_icon" width="200px" >
+    <a href="https://google.com.br"><img src="Google_Chrome_icon.svg" alt="Google_Chrome_icon" width="200px" ></a>
+
+</body>
+
+</html>
+<!--
+     display: inline
+     categoria: fluxo , fraseado , incorporado , interativo
+     contido: onde incorporado
+     filhos:NULL
+ -->
+
+<!-- 
+alt:    text    Especifica um texto alternativo para uma imagem.
+
+crossorigin:    anonymous
+                use-credentials
+Permite que imagens de sites de terceiros que permitem o acesso de origem cruzada sejam usadas com canvas.
+
+height:    pixels    Especifica a altura de uma imagem.
+
+width:    pixels    Especifica a largura de uma imagem.
+
+
+longdesc:   URL    Especifica um URL para uma descrição detalhada de uma imagem.
+
+referrerpolicy:    no-referrer - Nenhuma informação de referência será enviada junto com uma solicitação.
+↑                  no-referrer-when-downgrade - Padrão. Especifica que o cabeçalho do referenciador não será enviado às origens sem HTTPS.
+↑                  origin - Envie apenas esquema, host e porta para o cliente da solicitação.
+↑                  origin-when-cross-origin - Para solicitações de origem cruzada: envie apenas esquema, host e porta. Para solicitações da mesma origem: inclua também o caminho.
+↑                  same-origin - Para solicitações da mesma origem: as informações do referenciador serão enviadas. Para solicitações de origem cruzada: nenhuma informação de referenciador será enviada.
+↑                  strict-origin - Só envie informações do referenciador se o nível de segurança for o mesmo (por exemplo, HTTPS para HTTPS). Não envie para um destino menos seguro (por exemplo, HTTPS para HTTP).
+↑                  strict-origin-when-cross-origin - Envia o caminho completo ao executar uma solicitação de mesma origem. Envie apenas a origem quando o nível de segurança permanecer o mesmo (por exemplo, HTTPS para HTTPS). Não envie cabeçalho para um destino menos seguro (HTTPS para HTTP).
+↑                  unsafe-url - Envia apenas origem e caminho (não fragmento, senha ou nome de usuário). Este valor é considerado inseguro.
+especifica qual referenciador usar ao buscar a imagem.
+
+sizes:    sizes    Especifica os tamanhos da imagem para diferentes layouts de página.
+
+src:    URL    especifica o URL de uma imagem.
+
+srcset:    URL    especifica o URL da imagem a ser usada em diferentes situações.
+
+usemap:    #mapname    Especifica uma imagem como um mapa de imagem do lado do cliente.
+
+ismap:    ismap    Especifica uma imagem como um mapa de imagem do lado do servidor.
+ -->

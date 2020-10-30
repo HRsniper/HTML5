@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 32 Form</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        form {
+            background-color: hsl(0, 0%, 95%);
+        }
+
+        .input {
+            display: block;
+        }
+
+        .marginT {
+            margin-top: 10px;
+        }
+
+        .marginB {
+            margin-bottom: 10px;
+        }
+
+        .image {
+            width: 40px;
+        }
+        option {
+            background-color: violet;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="links">
+        <h5>Links de Referência:</h5>
+        <p>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank"><abbr title="W3 Schools">HTML
+                    Tags</abbr></a>
+            <a href="https://www.w3.org/2009/cheatsheet" target="_blank"><abbr title="W3C">HTML Tags
+                    Cheatsheet</abbr></a>
+        </p>
+    </div>
+
+    <h4>
+        <a href="aula29 tag FIGURE , FIGCAPTION , FIELDSET , LEGEND - representa conteúdo fluxo , legenda figure , caixa ao redor form,lengenda do form.html" target="_blank"> fieldset e legend</a>
+    </h4>
+    <h4>
+        A tag < textarea> define um controle de entrada de texto com várias linhas.
+        Uma área de texto pode conter um número ilimitado de caracteres e o texto é renderizado em uma fonte de largura fixa (geralmente Courier).    
+        O tamanho de uma área de texto pode ser especificado pelos atributos colunas e linhas, ou melhor ainda; pelas propriedades de altura e largura do CSS.            
+    </h4>
+
+    <br>
+
+    <form action="#" method="get">
+        <fieldset>
+            <label for="A">aaa</label>
+            <input class="input maginB" type="text" name="a" id="A">
+            <label for="B">bbb</label>
+            <input class="input maginB" type="text" name="B" id="B">
+            <label for="A">ccc</label>
+            <input class="input maginB" type="text" name="C" id="C">
+        </fieldset>
+        <fieldset disabled>
+            <legend>2:</legend>
+            <label for="A">aaa</label>
+            <input class="input maginB" type="text" name="a" id="A">
+            <label for="B">bbb</label>
+            <input class="input maginB" type="text" name="B" id="B">
+            <label for="A">ccc</label>
+            <input class="input maginB" type="text" name="C" id="C">
+        </fieldset>
+
+        <input class="input marginT" type="submit">
+    </form>
+
+    <br>
+    <form action="#" method="get">
+    <fieldset>
+    <label for="txt">textarea:</label>
+    <textarea class="input maginB" name="txtA" id="txt" cols="30" rows="10">texto padrao</textarea>
+    <input type="submit">
+    </fieldset> 
+    </form>
+
+</body>
+
+</html>
+<!--
+   textarea
+autofocus: autofocus - Especifica que uma área de texto deve receber automaticamente o foco quando a página for carregada.
+cols: number - Especifica a largura visível de uma área de texto.
+rows: number - especifica o número visível de linhas em uma área de texto.
+dirname: textareaname.dir - Especifica que a direção do texto da área de texto será enviada.
+disabled: disabled - Especifica que uma área de texto deve ser desativada
+form: form_id - Especifica a qual formulário a área de texto pertence.
+maxlength: number - especifica o número máximo de caracteres permitido na área de texto.
+name: text - especifica um nome para uma área de texto.
+placeholder: text - especifica uma dica curta que descreve o valor esperado de uma área de texto
+readonly: readonly - Especifica que uma área de texto deve ser somente leitura.
+required: required -Especifica que uma área de texto é necessária / deve ser preenchida.
+wrap: hard / soft - Especifica como o texto em uma área de texto deve ser quebrado quando enviado em um formulário. 
+-->

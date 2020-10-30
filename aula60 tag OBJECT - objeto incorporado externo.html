@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 60 Tag < OBJECT> </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="HRsniper">
+
+</head>
+
+<body>
+
+    <div id="links">
+        <h5>Links de Referência:</h5>
+        <p>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank"><abbr title="W3 Schools">HTML Tags</abbr></a>
+            <a href="https://www.w3.org/2009/cheatsheet" target="_blank"><abbr title="W3C">HTML Tags Cheatsheet</abbr></a>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/" target="_blank"><abbr title="Mozilla Dev">Tags Mozilla Dev</abbr></a>
+        </p>
+    </div>
+
+    <h4>
+        tag object, que representa um recurso externo, como um vídeo, áudio, imagem, animação, swf que pode ser incorporado na página.
+        Qualquer texto entre < object> e < /object> é um texto alternativo, para navegadores que não suportam os objetos incorporados.
+    </h4>
+
+    <object data="Matrix - 18977.mp4" name="mat" type="video/mp4"></object>
+
+    <object name="mat2">
+        <param name="src" value="Matrix - 18977.mp4">
+    </object>
+
+</body>
+
+</html>
+
+<!--
+object
+     display: inline
+     categoria: fluxo , fraseado , incorporado
+     contido: onde incorporado
+     filhos: param
+
+data: URL - especifica a URL do recurso a ser usado pelo objeto.(importante)
+form: form_id - Não é suportado em nenhum navegador.Especifica a qual formulário o objeto pertence.
+height: pixels - Especifica a altura do objeto.
+name: name - especifica um nome para o objeto.(importante)
+type: media_type - Especifica o tipo de mídia de dados especificado no atributo data.(https://www.iana.org/assignments/media-types/media-types.xhtml)
+usemap: #mapname - Somente suportado no navegador Firefox.Especifica o nome de um mapa de imagem do lado do cliente a ser usado com o objeto.
+width: pixels - Especifica a largura do objeto.
+ -->
+ <!-- 
+param
+    name: name - Especifica o nome de um parâmetro.
+    value: value - especifica o valor do parâmetro.
+  -->

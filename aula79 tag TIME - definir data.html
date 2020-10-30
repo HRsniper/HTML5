@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula79 Tag > </title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <h4>
+        A < time> tag define uma data / hora legível por humanos.
+        Esse elemento também pode ser usado para codificar datas e horas de maneira legível por máquina, para que os
+        agentes do usuário possam oferecer para adicionar lembretes de aniversário ou eventos agendados ao
+        calendário do usuário, e os mecanismos de pesquisa possam produzir resultados de pesquisa mais inteligentes.
+    </h4>
+
+    <p style="font-weight: bold;">Dates:</p>
+<p><time datetime="2020">   means the year 2020</time></p>
+<p><time datetime="2020-12">   means December 2020</time></p>
+<p><time datetime="2020-12-20">   means 20 December 2020</time></p>
+<p><time datetime="12-20">   means 20 December any year</time></p>
+<p><time datetime="2020-W15">   means week 15 of year 2020</time></p>
+
+<p style="font-weight: bold;">Date and Times:</p>
+<p><time datetime="2020-12-20T08:00">   means 20 December 2020 at 8am</time></p>
+<p><time datetime="2020-12-20 08:00">   also means 20 December 2020 at 8am</time></p>
+<p><time datetime="2020-12-20 08:30:45">   with minutes and seconds</time></p>
+<p><time datetime="2020-12-20 08:30:45.687">   with minutes, seconds, and milliseconds</time></p>
+
+<p style="font-weight: bold;">Times:</p>
+<p><time datetime="08:00">   means 8am</time></p>
+<p><time datetime="08:00-03:00">   means 8am in Rio de Janeiro (UTC-3 hours)</time></p>
+<p><time datetime="08:00+03:00">   means 8am in Madagascar (UTC+3 hours)</time></p>
+
+<p style="font-weight: bold;">Durations:</p>
+<p><time datetime="P2D">   means a duration of 2 days</time></p>
+<p><time datetime="PT15H10M">   means a duration of 15 hours and 10 minutes</time></p>
+
+</body>
+
+</html>
+
+
+<!--
+    display : inline 
+    categoria: fluxo e fraseado
+    contido : fluxo
+    filhos: fraseado
+
+    <time datetime="YYYY-MM-DDThh:mm:ssTZD">
+datetime: datetime - Representa uma data / hora legível por máquina do elemento <time>.
+
+YYYY-MM-DDThh:mm:ssTZD or PTDHMS 
+The date or time being specified. Explanation of components:
+YYYY - year (e.g. 2011)
+MM - month (e.g. 01 for January)
+DD - day of the month (e.g. 08)
+T or a space - a separator (required if time is also specified)
+hh - hour (e.g. 22 for 10.00pm)
+mm - minutes (e.g. 55)
+ss - seconds (e.g. 03)
+TZD - Time Zone Designator (Z denotes Zulu, also known as Greenwich Mean Time)
+P - a prefix for "Period"
+D - a prefix for "Days"
+H - a prefix for "Hours"
+M - a prefix for "Minutes"
+S - a prefix for "Seconds"
+ -->

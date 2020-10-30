@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 32 Form</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        form {
+            background-color: hsl(0, 0%, 95%);
+        }
+
+        input {
+            display: block;
+        }
+
+        #divBTN {
+           display: flex; 
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="links">
+        <h5>Links de Referência:</h5>
+        <p>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank"><abbr title="W3 Schools">HTML
+                    Tags</abbr></a>
+            <a href="https://www.w3.org/2009/cheatsheet" target="_blank"><abbr title="W3C">HTML Tags
+                    Cheatsheet</abbr></a>
+        </p>
+    </div>
+
+    <br>
+
+    <form action="#" name="formFORM" method="GET">
+        <label for="forID">Nome:</label>
+        <input type="text" name="formTXT" id="forID">
+        <div id="divBTN">
+            <input type="button" name="formBTN" id="forID" value="Batão">
+            <input type="submit" name="formSUB" id="forID" value="Enviar">
+            <input type="reset" name="formRES" id="forID" value="Limpar">
+        </div>
+    </form>
+
+
+</body>
+
+</html>
+<!-- 
+    input type
+submit:	define um botão de envio.
+reset:	define um botão de reset.
+button: nao predifinido ,tem fazer sua script para ele
+
+value :texto a ser mostrado no navegador para o batao
+O atributo value especifica o valor de um elemento <input>.
+O atributo value é usado de maneira diferente para diferentes tipos de entrada:
+Para "button", "reset" e "submit" - define o texto no botão
+Para "text", "password" e "hidden" - define o valor inicial (padrão) do campo de entrada
+Para "checkbox", "radio", "image" - define o valor associado à entrada (este também é o valor enviado no envio)
+Nota: O atributo value não pode ser usado com <input type = "file">.
+ -->
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 50 Tag < IFRAME>
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="HRsniper">
+</head>
+
+<body>
+
+    <div id="links">
+        <h5>Links de Referência:</h5>
+        <p>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank"><abbr title="W3 Schools">HTML
+                    Tags</abbr></a>
+            <a href="https://www.w3.org/2009/cheatsheet" target="_blank"><abbr title="W3C">HTML Tags
+                    Cheatsheet</abbr></a>
+        </p>
+    </div>
+
+    <h4>
+        A tag < iframe> especifica um quadro embutido.
+        Um quadro embutido é usado para incorporar outro documento no documento HTML atual.
+        tag iframe. O elemento HTML iframe (inline frame) representa um contexto de navegação aninhado, efetivamente
+        incorporando outra página HTML para a página atual. Um iframe pode ser usado dentro de um corpo de documento
+        normal. O contexto de navegação que contém o conteúdo incorporado é chamado o pai de contexto de navegação.
+         O contexto de navegação de nível superior (que não tem um pai) normalmente é a janela do navegador.
+    </h4>
+
+    <iframe src="https://www.w3.org/2009/cheatsheet"></iframe>
+    <iframe src="https://www.w3.org/2009/cheatsheet" width="500" height="500"></iframe>
+
+</body>
+
+</html>
+<!--
+     display: inline
+     categoria: fluxo e fraseado
+     contido: fraseado
+     filhos: fraseado
+ -->
+
+ <!--  
+allow:    Especifica uma política de recursos para o <iframe>.
+
+allowfullscreen:    true
+↑                   false
+Defina como true se o <iframe> puder ativar o modo de tela cheia chamando o método requestFullscreen ().
+
+allowpaymentrequest:    true
+↑                       false
+Configure como true se um <iframe> de origem cruzada puder invocar a API de solicitação de pagamento.
+
+height:    pixels    Especifica a altura de um <iframe>. A altura padrão é de 150 pixels.
+
+name:    text    especifica o nome de um <iframe>.
+
+referrerpolicy:    no-referrer - Nenhuma informação de referência será enviada junto com uma solicitação.
+↑                  no-referrer-when-downgrade - Padrão. Especifica que o cabeçalho do referenciador não será enviado às origens sem HTTPS.
+↑                  origin - Envie apenas esquema, host e porta para o cliente da solicitação.
+↑                  origin-when-cross-origin - Para solicitações de origem cruzada: envie apenas esquema, host e porta. Para solicitações da mesma origem: inclua também o caminho.
+↑                  same-origin - Para solicitações da mesma origem: as informações do referenciador serão enviadas. Para solicitações de origem cruzada: nenhuma informação de referenciador será enviada.
+↑                  strict-origin - Só envie informações do referenciador se o nível de segurança for o mesmo (por exemplo, HTTPS para HTTPS). Não envie para um destino menos seguro (por exemplo, HTTPS para HTTP).
+↑                  strict-origin-when-cross-origin - Envia o caminho completo ao executar uma solicitação de mesma origem. Envie apenas a origem quando o nível de segurança permanecer o mesmo (por exemplo, HTTPS para HTTPS). Não envie cabeçalho para um destino menos seguro (HTTPS para HTTP).
+↑                  unsafe-url - Envia apenas origem e caminho (não fragmento, senha ou nome de usuário). Este valor é considerado inseguro.
+Especifica quanto/quais informações do referenciador serão enviadas ao processar os atributos iframe.
+
+sandbox:	(sem valor) Aplica todas as restrições
+↑            allow-forms - Permite o envio de formulários.
+↑            allow-modals - Permite abrir janelas modais.
+↑            Allow-Orientation-Lock - Permite bloquear a orientação da tela.
+↑            allow-pointer-lock - Permite usar a API de bloqueio de ponteiro.
+↑            allow-popups - Permite pop-ups.
+↑            allow-popups-to-escape-sandbox - Permite que os pop-ups abram novas janelas sem herdar o sandboxing.
+↑            allow-presentation - Permite iniciar uma sessão de apresentação.
+↑            allow-same-origin - Permite que o conteúdo do iframe seja tratado como sendo da mesma origem.
+↑            allow-scripts - Permite executar scripts.
+↑            allow-top-navigation - Permite que o conteúdo do iframe navegue em seu contexto de navegação de nível superior.
+↑            allow-top-navigation-by-user-activation - Permite que o conteúdo do iframe navegue em seu contexto de navegação de nível superior, mas somente se iniciado pelo usuário.
+Ativa um conjunto extra de restrições para o conteúdo em um <iframe>.
+
+src:	URL		Especifica o endereço do documento a ser incorporado no <iframe>.
+
+srcdoc:		HTML_code	Especifica o conteúdo HTML da página a ser exibida no <iframe>.
+
+width:		pixels		Especifica a largura de um <iframe>. A largura padrão é de 300 pixels.
+  -->

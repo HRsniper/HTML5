@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula75 Tag  TABLE> </title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        table,td,th,tr  {
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h4>
+        A < table>tag define uma tabela HTML.
+        Uma tabela HTML consiste em um < table>elemento e um ou mais elementos < tr> , < th> e < td> .
+        O elemento < tr> define uma linha da tabela, o elemento < th> define um cabeçalho da tabela e o elemento < td> define uma célula da tabela.
+        Uma tabela HTML mais complexa também pode incluir elementos < caption>, < col>, < colgroup>, < thead>, < tfoot> e < tbody>.
+    </h4>
+    <h4>
+        A < th>tag define uma célula de cabeçalho em uma tabela HTML.
+        A < td>tag define uma célula padrão em uma tabela HTML.
+        Uma tabela HTML possui dois tipos de células:
+        Células do cabeçalho - contém informações do cabeçalho (criadas com o <  th>elemento)
+        Células padrão - contém dados (criados com o elemento <  td> )
+        O texto nos < th>elementos está em negrito e centralizado por padrão.
+        O texto nos elementos < td> é regular e alinhado à esquerda por padrão.
+    </h4>
+    <h4>
+        A < tr>tag define uma linha em uma tabela HTML.
+        Um < tr>elemento contém um ou mais elementos < th> ou < td> .
+    </h4>
+</body>
+
+    <!-- <table border="1"> -->
+    <table>
+        <tr>
+            <th >Cabeçalho</th>
+        </tr>
+        <tr>
+            <td style="font-weight: bold; font-style: italic;">corpo</td>
+            <td style="font-weight: bold; font-style: italic;">membro</td>
+            <td style="font-weight: bold; font-style: italic;">valor</td>
+        </tr>
+        <tr>
+            <td>corpo2</td>
+            <td>membro2</td>
+            <td>valor2</td>
+        </tr>
+        <tr>
+            <td>carro</td>
+            <td>gol</td>
+            <td>RS 7k</td>
+        </tr>
+    </table>
+
+</html>
+<!-- 
+    table
+display: table
+categoria: fluxo e fraseado
+contido: fraseado
+filhos: fraseado
+
+ -->
+
+ <!-- 
+    th
+abbr: text - especifica uma versão abreviada do conteúdo em uma célula de cabeçalho.
+
+colspan: number - especifica o número de colunas que uma célula de cabeçalho deve abranger.
+
+headers: header_id - Especifica uma ou mais células de cabeçalho às quais uma célula está relacionada.
+
+rowspan: number - especifica o número de linhas que uma célula de cabeçalho deve abranger.
+
+scope:  col
+        colgroup
+        row
+        rowgroup
+Especifica se uma célula de cabeçalho é um cabeçalho para uma coluna, linha ou grupo de colunas ou linhas.
+  -->
+<!-- 
+    td
+colspan: number - Especifica o número de colunas que uma célula deve abranger.
+
+headers: header_id - Especifica uma ou mais células de cabeçalho às quais uma célula está relacionada.
+
+rowspan: number - define o número de linhas que uma célula deve abranger.
+ -->

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 32 Form</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        form {
+            background-color: hsl(0, 0%, 95%);
+        }
+
+        .input {
+            display: block;
+        }
+
+        .marginT {
+            margin-top: 10px;
+        }
+
+        .marginB {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="links">
+        <h5>Links de Referência:</h5>
+        <p>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank"><abbr title="W3 Schools">HTML
+                    Tags</abbr></a>
+            <a href="https://www.w3.org/2009/cheatsheet" target="_blank"><abbr title="W3C">HTML Tags
+                    Cheatsheet</abbr></a>
+        </p>
+    </div>
+
+    <br>
+
+    <form action="#" name="form_FORM" method="GET">
+        <label for="forHORA">Hora:</label>
+        <input class="input marginB" type="time" name="form_hora" id="forHORA" min="6:00" max="18:00">
+        <input class="marginB" type="submit" value="Enviar">
+        <br>
+        <label for="forDATA">Data:</label>
+        <input class="input marginB" type="date" name="form_data" id="forDATA" min="2020-04-10" max="2020-04-20">
+        <br>
+        <label for="forDATA_HORA">Data e Hora:</label>
+        <input class="input marginB" type="datetime-local" name="form_datatime" id="forDATA_HORA" min="2020-04-10T10:00:00.000" max="2021-04-15T23:59:59.000" required>
+    </form>
+
+
+</body>
+
+</html>
+<!-- 
+    input type
+time: define um controle para inserir uma hora (sem fuso horário).
+date: define um controle de data (ano, mês, dia (sem hora)).
+datetime-local: define um controle de data e hora (ano, mês, dia, hora (sem fuso horário)).
+
+max: number date - especifica o valor máximo para um elemento <input>.
+min: number date - especifica um valor mínimo para um elemento <input>.
+
+required: required - Especifica que um campo de entrada deve ser preenchido antes de enviar o formulário.
+
+YYYY-MM-DDThh:mm:ss.ms	Specifies the minimum date and time allowed for the local datetime field.
+Explanation of components:
+YYYY - year (e.g. 2011)
+MM - month (e.g. 01 for January)
+DD - day of the month (e.g. 08)
+T - a required separator if time is also specified
+hh - hour (e.g. 22 for 10.00pm)
+mm - minutes (e.g. 55)
+ss - seconds (e.g. 03)
+ms - milliseconds (e.g. 510)
+
+value :texto a ser mostrado no navegador para o batao
+O atributo value especifica o valor de um elemento <input>.
+O atributo value é usado de maneira diferente para diferentes tipos de entrada:
+Para "button", "reset" e "submit" - define o texto no botão
+Para "text", "password" e "hidden" - define o valor inicial (padrão) do campo de entrada
+Para "checkbox", "radio", "image" - define o valor associado à entrada (este também é o valor enviado no envio)
+Nota: O atributo value não pode ser usado com <input type = "file">.
+ -->

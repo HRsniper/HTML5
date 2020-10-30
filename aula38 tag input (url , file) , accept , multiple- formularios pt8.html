@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 32 Form</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        form {
+            background-color: hsl(0, 0%, 95%);
+        }
+
+        .input {
+            display: block;
+        }
+
+        .marginT {
+            margin-top: 10px;
+        }
+
+        .marginB {
+            margin-bottom: 10px;
+        }
+
+        .image {
+            width: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="links">
+        <h5>Links de Referência:</h5>
+        <p>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank"><abbr title="W3 Schools">HTML
+                    Tags</abbr></a>
+            <a href="https://www.w3.org/2009/cheatsheet" target="_blank"><abbr title="W3C">HTML Tags
+                    Cheatsheet</abbr></a>
+        </p>
+    </div>
+
+    <br>
+
+    <form action="#" name="form_FORM" method="GET" enctype="multipart/form-data"> <!-- enctype preparar o form para receber arquivos -->
+        <label for="forFIL">Selecione 1 arquivo de imagem:</label>
+        <input class="input marginB" type="file" accept="image/*" name="form_FIL" id="ForFIL">
+        <label for="forFIL">Selecione Varios arquivo de musica:</label>
+        <input class="input marginB" type="file" accept="audio/*" name="form_FIL" id="ForFIL" multiple>
+        <input class="marginB" type="submit" value="Enviar">
+        <br>
+        <label for="forURL">Url:</label>
+        <input type="url" name="form_URL" id="forURL" placeholder="https://site.com.br" pattern="https://.*">
+    </form>
+
+
+</body>
+
+</html>
+<!-- 
+    input type
+url: define um campo para inserir um URL.para https precisa do pattern
+file: define um campo de seleção de arquivo e um botão "Procurar" (para upload de arquivos).
+Para definir um campo de seleção de arquivo que permita a seleção de vários arquivos, adicione o atributo "multiple".
+
+accept: file_extension (ex.: .gif, .jpg, .png, .doc)
+        audio/* all sound files
+        vídeo/* all video files
+        image/* all image files
+        media_type Um tipo de mídia válido, sem parâmetros. Consulte Tipos de mídia da IANA para obter uma lista completa dos tipos de mídia padrão.
+Especifica um filtro para quais tipos de arquivo o usuário pode selecionar na caixa de diálogo de entrada de arquivo (apenas para type = "file").
+
+multiple: multiple - Especifica que um usuário pode inserir mais de um valor em um elemento <input>
+
+Nota: O atributo value não pode ser usado com <input type = "file">.
+ -->

@@ -1,0 +1,14 @@
+WEBVTT - comentario/titulo
+
+NOTE - comentario
+align:alinhamento
+line:posiçao
+1,2,3... numeraçao sequencial(opcional)
+quebra de linhas sao o fim de sequencia
+O formato da hora usado é minutos: segundos.segundos em segundos ou horas: minutos: segundos.semissegundos
+
+00:01.000 --> 00:03.000 align:middle
+We are in New York City
+
+00:03.000 --> 00:06.000 align:right line:90%
+direita

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 62 Tag < optgroup> </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="HRsniper">
+
+</head>
+
+<body>
+
+    <div id="links">
+        <h5>Links de Referência:</h5>
+        <p>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank"><abbr title="W3 Schools">HTML Tags</abbr></a>
+            <a href="https://www.w3.org/2009/cheatsheet" target="_blank"><abbr title="W3C">HTML Tags Cheatsheet</abbr></a>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/" target="_blank"><abbr title="Mozilla Dev">Tags Mozilla Dev</abbr></a>
+        </p>
+    </div>
+
+    <h4>
+        A tag < optgroup> é usada para agrupar opções relacionadas em uma lista suspensa.
+        Se você tiver uma longa lista de opções, é mais fácil gerenciar grupos de opções relacionadas para um usuário.
+    </h4>
+
+    <select name="sec2" id="forCar">
+        <optgroup label="grupo1">
+            <option value="estrada2">strada</option>
+            <option value="estrada1">strada2</option>
+            <option value="estrada3">strada3</option>
+        </optgroup>
+        <optgroup label="grupo2">
+            <option value="estrada2">strada5</option>
+            <option value="estrada1">strada6</option>
+            <option value="estrada3">strada7</option>
+        </optgroup>
+    </select>
+
+</body>
+
+</html>
+
+<!--
+     display: null
+     categoria: 
+     contido: select
+     filhos: option
+
+    optgroup
+disabled: disabled - Especifica que um grupo de opções deve ser desativado.
+label: text -Especifica um rótulo para um grupo de opções.
+ -->

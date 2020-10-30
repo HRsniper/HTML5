@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 83 Tag < video> </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="HRsniper">
+
+</head>
+
+<body>
+
+    <div id="links">
+        <h5>Links de Referência:</h5>
+        <p>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank"><abbr title="W3 Schools">HTML Tags</abbr></a>
+            <a href="https://www.w3.org/2009/cheatsheet" target="_blank"><abbr title="W3C">HTML Tags Cheatsheet</abbr></a>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/" target="_blank"><abbr title="Mozilla Dev">Tags Mozilla Dev</abbr></a>
+        </p>
+    </div>
+
+    <h4>
+        A < video> tag especifica o vídeo, como um clipe de filme ou outras transmissões de vídeo.
+        Atualmente, existem 3 formatos de vídeo suportados para o elemento < video>: MP4(video/mp4), WebM(video/webm) e Ogg(video/ogg):
+        Dica: Qualquer texto entre as tags < video>e < /video>será exibido nos navegadores que não suportam o < video>elemento.
+        com a tag source o src e type tirase da tag video
+    </h4>
+
+    <video src="Matrix - 18977.mp4" width="300" height="" autoplay loop>
+    nao suportados
+    </video>
+
+    <video controls autoplay width="300" height="300" >
+        <source src="Matrix - 18977.mp4" type="video/mp4">
+        semvideo
+    </video>
+
+</body>
+
+</html>
+
+<!--
+ul
+     display: inline
+     categoria: fluxo e fraseado
+     contido: fluxo
+     filhos: fluxo e fraseado
+-->
+<!-- 
+autoplay: autoplay - Especifica que o vídeo começará a ser reproduzido assim que estiver pronto.
+
+controls: controls - Especifica que os controles de vídeo devem ser exibidos (como um botão de reprodução / pausa etc.).
+
+height: pixels - define a altura do player de vídeo.
+
+width: pixels - define a largura do player de vídeo.
+
+loop: loop - Especifica que o vídeo será reiniciado novamente toda vez que terminar.
+
+mute: mute - Especifica que a saída de áudio do vídeo deve ser silenciada.
+
+poster: URL - especifica uma imagem a ser exibida enquanto o vídeo está sendo baixado ou até o usuário pressionar o botão de reprodução.
+
+preload: auto,
+         metadados,
+         none
+especifica se e como o autor pensa que o vídeo deve ser carregado quando a página for carregada.
+
+src: URL Especifica o URL do arquivo de vídeo
+ -->

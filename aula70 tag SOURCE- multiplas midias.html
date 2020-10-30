@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula70 Tag < source> </title>
+
+
+</head>
+
+<body>
+
+    <h4>
+        A < source> tag é usada para especificar vários recursos de mídia para elementos de mídia, como < video>, < audio> e < picture>.
+        A < source> tag permite especificar arquivos de vídeo / áudio / imagem alternativos que o navegador pode escolher, com base em seu tipo de mídia, suporte a codec ou consulta de mídia.
+    </h4>
+    
+    <video controls width="300">
+        <source src="Matrix - 18977.mp4" type="video/mp4">
+    </video>
+    <br>
+    <picture>
+        <source media="(min-width: 1000px)" srcset="img400px.jpg">
+        <img src="img200px.jpg" alt="img">
+    </picture>
+
+</body>
+
+</html>
+<!-- 
+    display: block
+    categoria: fluxo e seçao
+    contido: fluxo
+    filhos: fluxo
+
+src: URL - obrigatório quando <source> é usado em <audio> e <video>. Especifica o URL do arquivo de mídia.
+srcset: URL - obrigatório quando <source> é usado em <picture>. Especifica o URL da imagem a ser usada em diferentes situações.
+media: media_query - Aceita qualquer consulta de mídia válida que normalmente seria definida em um CSS. (https://www.w3schools.com/tags/att_source_media.asp)
+sizes: especifica os tamanhos da imagem para diferentes layouts de página.
+type: MIME-type - Especifica o tipo MIME do recurso. (IANA Media Types)
+ -->

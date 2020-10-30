@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 20 Tag <DETAILS > e < SUMMARY  > </title>
+
+    <style>
+        summary::-webkit-details-marker{
+            color: aqua;
+        }
+
+        details[open] summary::-webkit-details-marker{
+            color: blue;
+        }
+
+        summary:hover {
+            background-color: brown;
+            transition: 0.2s;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <p>
+        <a href="https://www.w3schools.com/tags/default.asp">HTML Tags</a>
+        <br>
+        <a href="https://www.w3.org/2009/cheatsheet">HTML Tags Cheatsheet</a>
+    </p>
+
+
+    <h4>
+        A tag < details > especifica detalhes adicionais que o usuário pode exibir ou ocultar sob demanda.
+        A tag < details > pode ser usada para criar um widget interativo que o usuário pode abrir e fechar. Qualquer tipo de conteúdo pode ser colocado dentro da tag < details >.
+        O conteúdo de um elemento < details > não deve estar visível, a menos que o atributo open esteja definido.
+    <br>
+        Dica: A tag < summary > é usada para especificar um cabeçalho visível para os detalhes. É possível clicar no cabeçalho para visualizar / ocultar os detalhes.
+        Nota: O elemento < summary > deve ser o primeiro elemento filho do elemento < details >.
+    </h4>
+
+    <details open>
+        <summary>summary</summary>
+            <article>
+                <p>thrrthr</p>
+                <p>thrrthr</p>
+                <p>thrrthr</p>
+                <p>thrrthr</p>
+                <p>thrrthr</p>
+            </article>  
+    </details>
+    
+</body>
+</html>
+<!-- 
+    details
+display: block
+categoria: fluxo e interativo
+contido: fluxo
+filhos: <legend>
+ -->
+<!-- 
+Atributo    Valor   Descrição
+open        open    Especifica que os detalhes devem estar visíveis (abertos) para o usuário.
+ -->

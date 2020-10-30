@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 84 - FULL PAGE</title>
+    <link rel="stylesheet" href="aula84 full page.css">
+
+    <script src='https://kit.fontawesome.com/b6936b553f.js'></script>
+
+</head>
+
+<body>
+
+    <header class="headerPrincipal">
+
+        <div class="switchContainer">
+            <div class="toggle">
+                <input class="toggleInput" type="checkbox" id="slider" onchange="toggleTheme()">
+                <label class="toggleLabel" for="slider">Toggle</label>
+            </div>
+
+        </div>
+
+        <div class="socialMediaIcons">
+            <a href="#"><i class="isocialF fab fa-facebook-square"></i></a>
+            <a href="#"><i class="isocialY fab fa-youtube"></i></a>
+            <a href="#"><i class="isocialD fab fa-discord"></i></a>
+            <a href="http://cfbcursos.com.br/" target="_blank"><i class="isocialS fas fa-globe"></i></a>
+        </div>
+
+        <div class="LoRe">
+            <a id="registrarSE" onclick="registro()"><i class="fas fa-sign-out-alt"></i> Registrar-se</a>
+            <a id="logarSE" class="logarSE" onclick="logar()"><i class="fas fa-sign-in-alt"></i> Logar-se</a>
+        </div>
+
+        <!-- <button id="registrarSE" onclick=registro()>Registrar-se</button> -->
+        <div class="RegistroLoginModal esconderRegistro" id="registro">
+            <span id="btnFecharModal" onclick=registro() class="">X</span>
+            <form id="formulario" action="#" method="get" name="Registro">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="Nome" minlength="5" pattern="([a-zA-z0-9]+)"
+                    placeholder="Nome do usuario" maxlength="12">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="Email" title="email@gmail.com" pattern="([a-zA-z0-9]+)@gmail[.]com"
+                    placeholder="email@gmail.com">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="Senha" maxlength="5" pattern="[0-9]{5}"
+                    placeholder="Senha de 5 digitos">
+                <input class="btnInput" type="submit" value="Enviar">
+                <input class="btnInput" type="reset" value="Limpar">
+            </form>
+        </div>
+        <div class="RegistroLoginModal esconderRegistro" id="logar">
+            <span id="btnFecharModal2" onclick=logar() class="">X</span>
+            <form id="formulario" action="#" method="get" name="Registro">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="Email" title="email@gmail.com" pattern="([a-zA-z0-9]+)@gmail[.]com"
+                    placeholder="email@gmail.com">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="Senha" maxlength="5" pattern="[0-9]{5}"
+                    placeholder="Senha de 5 digitos">
+                <input class="btnInput" type="submit" value="Logar">
+            </form>
+        </div>
+
+        <nav class="navMenuTopo">
+            <ul class="ulMenuTopo">
+                <li class="liMenuTopo">
+                    <a href="http://127.0.0.1:5500/HTML5/aula84%20full%20page.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="liMenuTopo">
+                    <a class="btncursos" href="#" onmouseover="mostrarSubMenu()" onclick="mostrarSubMenu()">
+                        <i class="fas fa-book"></i> Cursos <i class="fas fa-angle-down"></i></a>
+                    <div class="sub-menu slideshow-fade">
+                        <a class="btncursos2" href="#" onmouseover="mostrarSubMenuSubOver()">Cursos <i class="fas fa-angle-right"></i></a>
+                        <div class="sub-menu-sub slideshow-fade">
+                            <a href="#">Cursos2</a>
+                            <a href="#">Cursos2</a>
+                            <a href="#">Cursos2</a>
+                        </div>
+                        <a href="#">Cursos</a>
+                        <a href="#">Cursos</a>
+                        <a href="#">Cursos</a>
+                        <a href="#">Cursos</a>
+                    </div>
+                </li>
+                <li class="liMenuTopo">
+                    <a href="#"><i class="fas fa-newspaper"></i> News</a>
+                </li>
+                <li class="liMenuTopo">
+                    <a href="#"><i class="fab fa-wikipedia-w"></i> Wiki</a>
+                </li>
+                <li class="liMenuTopo">
+                    <a href="#"><i class="fas fa-headset"></i> Suporte</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="bannerHome slideshow-container">
+        <div class="slideshow-slides slideshow-fade">
+            <img src="img1000pxX400px.jpg" alt="images">
+            <div class="slideshow-legenda">Caption slideshow-legenda 1</div>
+        </div>
+        <div class="slideshow-slides slideshow-fade">
+            <img src="img400px.jpg" alt="images">
+            <div class="slideshow-legenda">Caption slideshow-legenda 2</div>
+        </div>
+        <div class="slideshow-slides slideshow-fade">
+            <img src="img400px.jpg" alt="images">
+            <div class="slideshow-legenda">Caption slideshow-legenda 3</div>
+        </div>
+        <div class="slideshow-slides slideshow-fade">
+            <img src="img400px.jpg" alt="images">
+            <div class="slideshow-legenda">Caption slideshow-legenda 4</div>
+        </div>
+        <div class="slideshow-slides slideshow-fade">
+            <img src="img400px.jpg" alt="images">
+            <div class="slideshow-legenda">Caption Text</div>
+        </div>
+        <a class="slideshow-prev" onclick="proximoSlide(-1)">&#10094;</a>
+        <a class="slideshow-next" onclick="proximoSlide(1)">&#10095;</a>
+    </div>
+    <!-- The dots/circles -->
+    <div>
+        <span class="slideshow-ponto" onclick="currentSlide(1)"></span>
+        <span class="slideshow-ponto" onclick="currentSlide(3)"></span>
+        <span class="slideshow-ponto" onclick="currentSlide(4)"></span>
+        <span class="slideshow-ponto" onclick="currentSlide(5)"></span>
+        <span class="slideshow-ponto" onclick="currentSlide(2)"></span>
+    </div>
+    </div>
+
+
+    <main class="mainPrincipal">
+        <!-- <aside class="asideAuxiliarEsq"  data-animacao="fate"> -->
+        <aside class="asideAuxiliarEsq">
+            aside menu Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi numquam nobis distinctio soluta
+            velit omnis commodi suscipit dolorum, laborum minus earum, possimus repellat est veritatis eos nemo
+            provident. Unde, iste.
+            aside menu Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi numquam nobis distinctio soluta
+            velit omnis commodi suscipit dolorum, laborum minus earum, possimus repellat est veritatis eos nemo
+            provident. Unde, iste.
+            aside menu Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi numquam nobis distinctio soluta
+            velit omnis commodi suscipit dolorum, laborum minus earum, possimus repellat est veritatis eos nemo
+            provident. Unde, iste.
+        </aside>
+        <aside class="asideAuxiliarDir marginArtigo">
+            menu de aulas
+            <a href="">aula 1</a>
+            <a href="">aula 1</a>
+            <a href="">aula 1</a>
+            <a href="">aula 1</a>
+            <a href="">aula 1</a>
+            <a href="">aula 1</a>
+            <a href="">aula 1</a>
+            <a href="">aula 1</a>
+            <a href="">aula 1</a>
+            <a href="">aula 1</a>
+            <a href="">aula 1</a>
+            <a href="">aula 1</a>
+            <a href="">aula 1</a>
+            <a href="">aula 1</a>
+            <a href="">aula 1</a>
+        </aside>
+
+        <section class="sectionPrincipal">
+            <article class="artigo1 marginArtigo">
+                article Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat tempore labore, culpa aliquid
+                beatae dolorum provident ad aut quas amet ex laborum expedita voluptates architecto excepturi temporibus
+                reprehenderit perspiciatis atque.
+                article Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat tempore labore, culpa aliquid
+                beatae dolorum provident ad aut quas amet ex laborum expedita voluptates architecto excepturi temporibus
+                reprehenderit perspiciatis atque.
+                article Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat tempore labore, culpa aliquid
+                beatae dolorum provident ad aut quas amet ex laborum expedita voluptates architecto excepturi temporibus
+                reprehenderit perspiciatis atque.
+                reprehenderit perspiciatis atque.
+            </article>
+            <article class="artigo2 marginArtigo">
+                <!-- <article class="artigo2 marginArtigo parallax Pimg2"> -->
+                ARTIOG2
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed provident qui nemo sint nulla, aliquam non!
+                Nemo veniam iste repellat maiores sit, placeat, sunt fuga tempore explicabo voluptatibus expedita cum.
+                Nemo veniam iste repellat maiores sit, placeat, sunt fuga tempore explicabo voluptatibus expedita cum.
+                Nemo veniam iste repellat maiores sit, placeat, sunt fuga tempore explicabo voluptatibus expedita cum.
+                Nemo veniam iste repellat maiores sit, placeat, sunt fuga tempore explicabo voluptatibus expedita cum.
+                Nemo veniam iste repellat maiores sit, placeat, sunt fuga tempore explicabo voluptatibus expedita cum.
+                Nemo veniam iste repellat maiores sit, placeat, sunt fuga tempore explicabo voluptatibus expedita cum.
+                Nemo veniam iste repellat maiores sit, placeat, sunt fuga tempore explicabo voluptatibus expedita cum.
+            </article>
+            <article class="marginArtigo parallax Pimg1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, perferendis ut autem maiores fugiat
+                dignissimos assumenda porro aperiam maxime iure ducimus, fugit voluptas eum? Voluptatibus veniam fugiat
+                dignissimos assumenda porro aperiam maxime iure ducimus, fugit voluptas eum? Voluptatibus veniam fugiat
+                dignissimos assumenda porro aperiam maxime iure ducimus, fugit voluptas eum? Voluptatibus veniam fugiat
+                dignissimos assumenda porro aperiam maxime iure ducimus, fugit voluptas eum? Voluptatibus veniam fugiat
+                dignissimos assumenda porro aperiam maxime iure ducimus, fugit voluptas eum? Voluptatibus veniam fugiat
+                dignissimos assumenda porro aperiam maxime iure ducimus, fugit voluptas eum? Voluptatibus veniam fugiat
+                dignissimos assumenda porro aperiam maxime iure ducimus, fugit voluptas eum? Voluptatibus veniam fugiat
+                dignissimos assumenda porro aperiam maxime iure ducimus, fugit voluptas eum? Voluptatibus veniam fugiat
+                dignissimos assumenda porro aperiam maxime iure ducimus, fugit voluptas eum? Voluptatibus veniam fugiat
+                dignissimos assumenda porro aperiam maxime iure ducimus, fugit voluptas eum? Voluptatibus veniam fugiat
+                dignissimos assumenda porro aperiam maxime iure ducimus, fugit voluptas eum? Voluptatibus veniam fugiat
+                dignissimos assumenda porro aperiam maxime iure ducimus, fugit voluptas eum? Voluptatibus veniam fugiat
+                dignissimos assumenda porro aperiam maxime iure ducimus, fugit voluptas eum? Voluptatibus veniam fugiat
+                dignissimos assumenda porro aperiam maxime iure ducimus, fugit voluptas eum? Voluptatibus veniam fugiat
+                dignissimos assumenda porro aperiam maxime iure ducimus, fugit voluptas eum? Voluptatibus veniam fugiat
+                dignissimos assumenda porro aperiam maxime iure ducimus, fugit voluptas eum? Voluptatibus veniam fugiat
+                dolorem nostrum voluptatum?
+            </article>
+            <article class="marginArtigo">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, cum architecto nostrum tenetur,
+                quia accusamus delectus id aspernatur repellendus quos inventore similique odit mollitia doloremque
+                repudiandae. Quod id ducimus iste!
+            </article>
+        </section>
+    </main>
+
+    <footer class="footerPrincipal">
+        footer Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci beatae assumenda iure, dolorum autem
+        omnis ex minima quis praesentium, sit necessitatibus tenetur mollitia et blanditiis ullam aspernatur ab qui
+        amet!
+        <div class="socialMediaIcons">
+            <a href="#"><i class="isocialF fab fa-facebook-square"></i></a>
+            <a href="#"><i class="isocialY fab fa-youtube"></i></a>
+            <a href="#"><i class="isocialD fab fa-discord"></i></a>
+            <a href="http://cfbcursos.com.br/" target="_blank"><i class="isocialS fas fa-globe"></i></a>
+        </div>
+    </footer>
+
+    <video src="Network - 12716.mp4" loop autoplay muted id="background"></video>
+    <script src="aula84 full page.js"></script>
+
+</body>
+
+</html>

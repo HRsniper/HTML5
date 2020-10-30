@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 31</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="links">
+        <h5>Links de Referência:</h5>
+        <p>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank"><abbr title="W3 Schools">HTML Tags</abbr></a>
+            <a href="https://www.w3.org/2009/cheatsheet" target="_blank"><abbr title="W3C">HTML Tags Cheatsheet</abbr></a>
+        </p>
+    </div>
+    
+    <h4>
+    A tag < form> é usada para criar um formulário HTML para entrada do usuário.
+    <br>O elemento < form> pode conter um ou mais dos seguintes elementos de formulário:
+    <br> < input> <br> < textarea> <br> < button> <br> < select> <br> < option> <br> < optgroup> <br> < fieldset> <br> < label> <br> < output>
+    </h4>
+    <h4>
+    A tag < input> especifica um campo de entrada onde o usuário pode inserir dados.
+    Os elementos < input> são usados ​​em um elemento < form> para declarar controles de entrada que permitem que os usuários insiram dados.
+    Um campo de entrada pode variar de várias maneiras, dependendo do atributo type.
+    <br> Nota: O elemento < input> está vazio, contém apenas atributos.
+    <br> Dica: Sempre use a tag < label> para definir rótulos para < input type = "text">, < input type = "checkbox">, < input type = "radio">, < nput type = "file"> e < input type = "password">.  
+    </h4>
+    <H4>
+    A tag < label> define um rótulo para vários elementos:
+            < input type = "color"> <br>
+            < input type = "date"> <br>
+            < input type = "datetime-local"> <br>
+            < input type = "email"> <br>
+            < input type = "file"> <br>
+            < input type = "month"> <br>
+            < input type = "number"> <br>
+            < input type = "password"> <br>
+            < input type = "radio"> <br>
+            < input type = "range"> <br>
+            < input type = "search"> <br>
+            < input type = "tel"> <br>
+            < input type = "text"> <br>
+            < input type = "time"> <br>
+            < input type = "url"> <br>
+            < meter> <br>
+            < progress> <br>
+            < select> <br>
+            < textarea> <br>
+            O atributo for da marca < label> deve ser igual ao atributo id do elemento relacionado para uni-los. 
+            Dica: Um rótulo é vinculado a um elemento usando o atributo "for" ou colocando o elemento dentro do elemento < label>.
+    </H4>
+
+
+    <form action="" name="formCD" method="" >
+        <label for="nomeID">Nome:</label>
+        <input type="text" name="formname" id="nomeID">
+    </form>
+
+</body>
+</html>
+<!-- 
+    form
+display: block
+categoria: fluxo
+contido: fluxo
+filhos: fluxo
+
+atributos
+accept-charset:    character_set    Especifica as codificações de caracteres que devem ser usadas para o envio do formulário.
+action:    URL    especifica para onde enviar os dados do formulário quando um formulário é enviado.
+autocomplete:    on / off    Especifica se um formulário deve ter ativado ou desativado o preenchimento automático.
+enctype:    application / x-www-form-urlencoded
+   ↑            multipart / form-data
+   ↑                 text / plain
+Especifica como os dados do formulário devem ser codificados ao enviá-los ao servidor (apenas para o método = "post").
+method:    get / post    Especifica o método HTTP a ser usado ao enviar dados do formulário.Os dados do formulário podem ser enviados como variáveis ​​de URL (com o método = "get") ou como transação de postagem HTTP (com o método = "post").
+name:    text    especifica o nome de um formulário.
+novalidate:    novalidate    Especifica que o formulário não deve ser validado quando enviado.
+target:    _blank
+  ↑        _auto
+  ↑        _parent
+  ↑        _top
+Especifica onde exibir a resposta que é recebida após o envio do formulário.
+ -->
+
+ <!-- 
+    input
+display: inline
+categoria: fluxo, fraseado e interativo 
+contido: fraseado
+filhos: NULL
+atibutos
+https://www.w3schools.com/tags/tag_input.asp
+
+sao muitos atributos
+
+type	button
+↑       checkbox
+↑       color
+↑       date
+↑       datetime-local
+↑       email
+↑       file
+↑       hidden
+↑       image
+↑       month
+↑       number
+↑       password
+↑       radio
+↑       range
+↑       reset
+↑       search
+↑       submit
+↑       tel
+↑       text
+↑       time
+↑       url
+↑       week	
+Especifica o tipo de elemento <input> a ser exibido
+-->
+
+<!-- 
+    label
+display: inline
+categoria: fluxo e fraseado
+contido: fraseado
+filhos: fraseado
+for:    element_id    Especifica a qual elemento do formulário um rótulo está vinculado.
+form:    form_id    Especifica a qual formulário o rótulo pertence.
+ -->

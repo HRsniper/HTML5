@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 61 Tag < OL> < LI> </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="HRsniper">
+
+</head>
+
+<body>
+
+    <div id="links">
+        <h5>Links de Referência:</h5>
+        <p>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank"><abbr title="W3 Schools">HTML Tags</abbr></a>
+            <a href="https://www.w3.org/2009/cheatsheet" target="_blank"><abbr title="W3C">HTML Tags Cheatsheet</abbr></a>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/" target="_blank"><abbr title="Mozilla Dev">Tags Mozilla Dev</abbr></a>
+        </p>
+    </div>
+
+    <h4>
+        A tag < ol> define uma lista ordenada. Uma lista ordenada pode ser numérica ou alfabética, algarismos romanos.
+        Use a tag < li> para definir itens da lista.
+    </h4>
+    <h4>
+        A tag < li> define um item da lista.
+        A tag < li> é usada em listas ordenadas ( < ol> ), em listas não ordenadas ( < ul> ) e em listas de menus ( < menu> ).
+    </h4>
+
+    <ol type="I">
+        <li value="5">html5</li>
+        <ol>
+            <li>document</li>
+        </ol>
+        <li>css3</li>
+        <li>c++</li>
+        <li>javascript</li>
+    </ol>
+
+</body>
+
+</html>
+
+<!--
+ol
+     display: block
+     categoria: fluxo
+     contido: fluxo
+     filhos: li
+
+reversed: reversed - Especifica que a ordem da lista deve estar descendente (9,8,7 ...).
+start: number - especifica o valor inicial de uma lista ordenada.
+type:   'a' indica letras minúsculas,
+        'A' indica letras maiúsculas,
+        'i' indica algarismos romanos minúsculos,
+        'I' indica algarismos romanos maiúsculos,
+        '1' indica números (padrão).
+Especifica o tipo de marcador a ser usado na lista.
+ -->
+ <!-- 
+li
+    value: number - especifica o valor de um item da lista. Os seguintes itens da lista serão incrementados a partir desse número (apenas para listas <ol>).
+  -->

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 57 Tag < METER>
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="HRsniper">
+
+</head>
+
+<body>
+
+    <div id="links">
+        <h5>Links de Referência:</h5>
+        <p>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank"><abbr title="W3 Schools">HTML
+                    Tags</abbr></a>
+            <a href="https://www.w3.org/2009/cheatsheet" target="_blank"><abbr title="W3C">HTML Tags
+                    Cheatsheet</abbr></a>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/meta" target="_blank"><abbr title="Mozilla Dev">Tag Meta Mozilla</abbr></a>
+        </p>
+    </div>
+
+    <h4>
+        A tag < meter> define uma medida escalar dentro de um intervalo conhecido ou de um valor fracionário. Isso também é conhecido como medidor.
+        Exemplos: uso do disco, relevância de um resultado da consulta etc.
+        Nota: A tag < meter> não deve ser usada para indicar progresso (como em uma barra de progresso). Para barras de progresso, use a tag < progress> .
+        Dica: sempre adicione a tag < label> para obter as melhores práticas de acessibilidade!,label link com for no id do meter.
+    </h4>
+    
+    <label for="meter">Medidor:</label>
+    <meter value="0.5" id="meter">50%</meter>
+    <br>
+    <label for="meter1">Medidor:</label>
+    <meter value="0.6" id="meter1" high="0.5" low="0.4">60%</meter>
+    <br>
+    <label for="meter2">Medidor:</label>
+    <meter id="meter2" value="0.5" id="meter2" max="0.6" min="0.1">50%</meter>
+    <br>
+    <label for="meter3">Medidor:</label>
+    <meter id="meter3" low="51" high="80" max="100" value="85">85</meter>
+    <br>
+    <label for="meter4">Medidor:</label>
+    <meter id="meter4" low="11" high="15" min="1" max="100" value="10">10</meter>
+    <br>
+    <label for="meter5">Medidor:</label>
+    <meter id="meter5" low="51" high="80" max="100" value="85" optimum="50">85</meter>
+
+</body>
+
+</html>
+<!--
+     display: inline
+     categoria: fluxo e fraseado
+     contido: fraseado
+     filhos: fraseado
+ -->
+<!-- 
+form: form_id - Especifica a qual formulário o elemento <meter> pertence.
+high: number - especifica o intervalo que é considerado um valor alto.(alerta)
+low: number - especifica o intervalo que é considerado um valor baixo.(alerta)
+max: number - especifica o valor máximo do intervalo.
+min: number - especifica o valor mínimo do intervalo. O valor padrão é 0.
+optimum: número - especifica qual é o valor ideal para o medidor.
+value: número - obrigatório.O valor numérico atual. Ele deve estar entre os valores mínimos
+ e máximo (o atributo min e o atributo max) se eles estiverem especificados. 
+ -->

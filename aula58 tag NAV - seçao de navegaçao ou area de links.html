@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 57 Tag < METER>
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="HRsniper">
+
+    <style>
+        nav a {
+            background-color: turquoise;
+            text-decoration: none;
+            padding: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="links">
+        <h5>Links de Referência:</h5>
+        <p>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank"><abbr title="W3 Schools">HTML
+                    Tags</abbr></a>
+            <a href="https://www.w3.org/2009/cheatsheet" target="_blank"><abbr title="W3C">HTML Tags
+                    Cheatsheet</abbr></a>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/meta" target="_blank"><abbr
+                    title="Mozilla Dev">Tags Mozilla Dev</abbr></a>
+        </p>
+    </div>
+
+    <h4>
+        A tag < nav> representa uma seção de uma página que aponta para outras páginas ou para outras áreas da página,
+            ou seja, uma seção com links de navegação.
+            Observe que nem todos os links de um documento devem estar dentro de um elemento < nav>. O elemento < nav>
+                    destina-se apenas ao bloco principal de links de navegação.
+    </h4>
+
+    <nav>
+        <a href="/html/">HTML</a>
+        <a href="/css/">CSS</a>
+        <a href="/js/">JavaScript</a>
+        <a href="/cpp/">C++</a>
+    </nav>
+
+</body>
+
+</html>
+<!--
+     display: block
+     categoria: fluxo e seçao
+     contido: fluxo
+     filhos: fluxo
+ -->
+<!-- 
+form: form_id - Especifica a qual formulário o elemento <meter> pertence.
+high: number - especifica o intervalo que é considerado um valor alto.(alerta)
+low: number - especifica o intervalo que é considerado um valor baixo.(alerta)
+max: number - especifica o valor máximo do intervalo.
+min: number - especifica o valor mínimo do intervalo. O valor padrão é 0.
+optimum: número - especifica qual é o valor ideal para o medidor.
+value: número - obrigatório.O valor numérico atual. Ele deve estar entre os valores mínimos
+ e máximo (o atributo min e o atributo max) se eles estiverem especificados. 
+ -->

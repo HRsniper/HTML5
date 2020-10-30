@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula77 Tag  > </title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        table,td,th,tr  {
+            border: 1px solid #000000;
+        }
+        thead {color:green;}
+        tbody {color:blue;}
+        tfoot {color:red;}
+    </style>
+</head>
+
+<body>
+
+    <h4>
+        A < table>tag define uma tabela HTML.
+        Uma tabela HTML consiste em um < table>elemento e um ou mais elementos < tr> , < th> e < td> .
+        O elemento < tr> define uma linha da tabela, o elemento < th> define um cabeçalho da tabela e o elemento < td> define uma célula da tabela.
+        Uma < table> tabela HTML mais complexa também pode incluir elementos < caption>, < col>, < colgroup>, < thead>, < tfoot> e < tbody>.
+    </h4>
+    <h4>
+        A < caption>tag define uma legenda da tabela.
+        A < caption>tag deve ser inserida imediatamente após a tag < table>.
+        Nota: Você pode especificar apenas uma legenda por tabela.
+        Dica: Por padrão, uma legenda da tabela será alinhada ao centro acima de uma tabela. 
+    </h4>
+    <h4>
+        A < colgroup>tag especifica um grupo de uma ou mais colunas em uma tabela para formatação.
+        A < colgroup>tag é útil para aplicar estilos a colunas inteiras, em vez de repetir os estilos para cada célula, para cada linha.
+        Nota: A < colgroup>tag deve ser filha de um elemento < table>, depois de qualquer elemento < caption> e antes de qualquer elemento < thead>, < tbody>, < tfoot> e < tr>.
+        Dica: Para definir propriedades diferentes para uma coluna em a < colgroup>, use a marca < col> na < colgroup>marca.
+    </h4>
+    <h4>
+        A < col>tag especifica propriedades da coluna para cada coluna em um elemento < colgroup> .
+        A < col>tag é útil para aplicar estilos a colunas inteiras, em vez de repetir os estilos para cada célula, para cada linha.
+    </h4>
+    <h4>
+        A < thead>tag é usada para agrupar o conteúdo do cabeçalho em uma tabela HTML.
+        O < thead>elemento é usado em conjunto com os elementos < tbody> e < tfoot> para especificar cada parte de uma tabela (cabeçalho, corpo, rodapé).
+        Os navegadores podem usar esses elementos para ativar a rolagem do corpo da tabela independentemente do cabeçalho e rodapé. Além disso, ao imprimir uma tabela grande que abrange várias páginas, esses elementos podem permitir que o cabeçalho e o rodapé da tabela sejam impressos na parte superior e inferior de cada página.
+        A < thead>tag deve ser usada no seguinte contexto: Como filho de um elemento < table>, após qualquer elemento < caption> e < colgroup>, e antes de qualquer elemento < tbody>, < tfoot> e < tr>.
+        A < tbody>tag deve ser usada no seguinte contexto: Como filho de um elemento < table>, após qualquer elemento < caption>, < colgroup> e < thead>.
+        A < tfoot>tag deve ser usada no seguinte contexto: Como filho de um elemento < table>, após qualquer elemento < caption>, < colgroup>, < thead> e < tbody>.
+    </h4>
+
+</body>
+
+<!-- <table border="1"> -->
+    <table>
+        <caption>Monthly savings</caption>
+        <colgroup>
+            <col style="background-color: aquamarine;">
+            <col span="3" style="background-color: aqua;">
+        </colgroup>
+        <thead>
+        <tr>
+            <td rowspan="6">tabela</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>corpo</th>
+            <th>membro</th>
+            <th>valor</th>
+        </tr>
+        <tr>
+            <td>corpo2</td>
+            <td>membro2</td>
+            <td>valor2</td>
+        </tr>
+        <tr>
+            <td>carro</td>
+            <td>gol</td>
+            <td>RS 7k</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="3">tabela de tabela com tabela</td>
+        </tr>
+        </tfoot>
+    </table>
+
+</html>
+<!-- 
+    table
+display: table
+categoria: 
+contido: 
+filhos: 
+
+ -->
+<!-- 
+    caption
+    display: table-caption
+ -->
+
+ <!-- 
+     colgroup
+    display: table-column-group;
+span: number - Especifica o número de colunas que um grupo de colunas deve abranger.
+  -->
+
+  <!-- 
+    col
+    display: table-column;
+span: number - Especifica o número de colunas que um elemento <col> deve abranger.
+   -->
+
+<!-- 
+    thead
+  display: table-header-group;
+ -->
+
+ <!-- 
+     tfoot
+  display: table-footer-group;
+  -->
+
+<!-- 
+    tbody
+  display: table-row-group;
+ -->

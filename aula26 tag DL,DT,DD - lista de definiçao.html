@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 26 Tag < DL >< DT >< DD > </title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        dl {
+            background-color: #eeeeee;
+        }
+        dt {
+            border: 1px solid #000000;
+        }
+        dd {
+            color: rgb(60, 179, 179);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="links">
+        <h5>Links de Referência:</h5>
+        <p>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank"><abbr title="W3 Schools">HTML Tags</abbr></a>
+            <a href="https://www.w3.org/2009/cheatsheet" target="_blank"><abbr title="W3C">HTML Tags Cheatsheet</abbr></a>
+        </p>
+    </div>
+
+    <h4>listas de definição ou lista de descrição, para isto vamos usar as tags dl, dt e dd.
+        <br>
+        A tag < dl > é a raiz,e é usada em conjunto com < dt > (define termos /titulos / nomes) e < dd > (descreve cada termo /descrição do titulos / nome).
+    </h4>
+
+    <dl>
+        <dt>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dt>
+        <dd>Curabitur tristique eros vel tristique tincidunt.</dd>
+        <dd>Curabitur tristique eros vel tristique tincidunt.</dd>
+
+        <dt>Sed sodales dolor in elit commodo, vitae mollis lacus interdum.</dt>
+        <dd>Nunc in tellus aliquet tellus elementum venenatis a in nisi.</dd>
+        <dd>Nunc in tellus aliquet tellus elementum venenatis a in nisi.</dd>
+
+        <dt>Fusce pretium ex ullamcorper nibh scelerisque finibus a sit amet enim.</dt>
+        <dd>Nunc tempus diam sollicitudin nisl faucibus condimentum.</dd>
+    </dl>
+
+</body>
+
+</html>
+<!-- 
+    DL
+display: block
+categoria: fluxo
+contido : fluxo
+filhos: DT e DD
+ -->
+<!-- 
+    DT
+display: block
+categoria: fluxo
+contido : DL ou DIALOG
+filhos: fraseado
+ -->
+<!-- 
+    DD
+display: block
+categoria: fluxo
+contido : DL ou DIALOG
+filhos: fluxo
+ -->

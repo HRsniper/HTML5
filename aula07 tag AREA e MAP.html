@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07 Tag  < AREA > e < MAP ></title>
+</head>
+<body>
+    
+    <h4>
+        <a href="https://www.w3schools.com/tags/tag_area.asp">tag area</a><br>
+        <a href="https://www.w3schools.com/tags/tag_map.asp">tag map</a><br>
+        as tags area e map, basicamente vamos mapear áreas de link em imagens, cada imagem pode ter vários links em locais diferentes.
+        A tag < area > define uma área dentro de um mapa de imagem (um mapa de imagem é uma imagem com áreas clicáveis).
+        O elemento < area > é sempre aninhado dentro de uma tag < map >.
+    </h4>
+
+    <img src="brasil.jpg" alt="" usemap="#mapabrasil">
+
+    <map name="mapabrasil">
+        <area shape="poly" coords="451,625,469,585,455,549,421,535,407,479,360,445,325,479,239,501,289,517,313,583,379,603" href="http://www.rondonia.ro.gov.br/" alt="Rondonia">
+        <area shape="circle" coords="300,300,150" href="#" alt="Amazonas">
+        <area shape="rect" coords="500,140,780,490" href="#" alt="Para">
+    </map>
+
+    <!--display:null
+    categoria: fluxo e texto
+    contido por: map
+    filhos: null
+
+    AREA
+    globais
+
+    alt = tipo:text - Especifica um texto alternativo para a área. Necessário se o atributo href estiver presente
+    coords = tipo:coordinates - Especifica as coordenadas da área
+    shape =  forma da area em px
+
+    poly: informa todas pontos para se forma o poligono
+    circle: informa o centro e o raio
+    rect: informa o inicio e o final para forma o quadrado(diagonal)
+    -->
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 57 Tag < METER> </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="HRsniper">
+
+    <script>
+        alert("script");
+    </script>
+    <noscript>
+        <p>script desativado</p>
+    </noscript>
+
+</head>
+
+<body>
+
+    <div id="links">
+        <h5>Links de Referência:</h5>
+        <p>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank"><abbr title="W3 Schools">HTML Tags</abbr></a>
+            <a href="https://www.w3.org/2009/cheatsheet" target="_blank"><abbr title="W3C">HTML Tags Cheatsheet</abbr></a>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/meta" target="_blank"><abbr title="Mozilla Dev">Tags Mozilla Dev</abbr></a>
+        </p>
+    </div>
+
+    <h4>
+        A tag define uma seção de html a ser inserida se um tipo de script não é suportado pela página ou se o script está desativado no navegador.
+        O elemento < noscript> pode ser usado em < head> e < body>.
+        Quando usado dentro do elemento < head>: < noscript> deve conter apenas elementos < link>, < style > e < meta>.
+        Dica: Também é uma boa prática usar a tag de comentário para "ocultar" scripts de navegadores sem suporte para scripts do lado do cliente (para que eles não sejam exibidos como texto sem formatação).
+    Fora dos head elementos, se o script estiver desativado para o noscript elemento
+    O noscript modelo de conteúdo do elemento é transparente.
+    Fora dos head elementos, se o script estiver ativado para o noscript elemento
+    O noscript elemento deve conter apenas texto, exceto que o texto deve ser tal que a execução do algoritmo.
+    </h4>
+
+    
+
+</body>
+
+</html>
+
+<!--
+     display: block
+     categoria: metadados , fluxo e seçao
+     contido: head ou apos script(se tiver do body)
+     filhos: fluxo
+ -->
+<!-- 
+form: form_id - Especifica a qual formulário o elemento <meter> pertence.
+high: number - especifica o intervalo que é considerado um valor alto.(alerta)
+low: number - especifica o intervalo que é considerado um valor baixo.(alerta)
+max: number - especifica o valor máximo do intervalo.
+min: number - especifica o valor mínimo do intervalo. O valor padrão é 0.
+optimum: número - especifica qual é o valor ideal para o medidor.
+value: número - obrigatório.O valor numérico atual. Ele deve estar entre os valores mínimos
+ e máximo (o atributo min e o atributo max) se eles estiverem especificados. 
+ -->

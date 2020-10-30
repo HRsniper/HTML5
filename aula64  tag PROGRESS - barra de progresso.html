@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 64 Tag < PROGRESS> </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="HRsniper">
+
+</head>
+
+<body>
+
+    <div id="links">
+        <h5>Links de Referência:</h5>
+        <p>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank"><abbr title="W3 Schools">HTML Tags</abbr></a>
+            <a href="https://www.w3.org/2009/cheatsheet" target="_blank"><abbr title="W3C">HTML Tags Cheatsheet</abbr></a>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/" target="_blank"><abbr title="Mozilla Dev">Tags Mozilla Dev</abbr></a>
+        </p>
+    </div>
+
+    <h4>
+        A < progress> tag representa o progresso de uma tarefa.
+        Dica: sempre adicione a tag < label> para obter as melhores práticas de acessibilidade! , linka elemento for da label com id do progress
+        Dica: Use a < progress> tag em conjunto com JavaScript para exibir o progresso de uma tarefa.
+    </h4>
+
+    <label for="progresso">Barra:</label>
+    <input type="text" name="num" oninput="progresso.value=this.value">
+    <br>
+    <input type="range" name="num1" onchange="progresso.value=this.value">
+    <br>
+    <progress id="progresso" max="100" value="0"></progress>
+    
+
+</body>
+
+</html>
+
+<!--
+     display: null
+     categoria: fluxo e fraseado
+     contido: fraseado
+     filhos: fraseado caso nao carregado
+
+max: number - especifica quanto trabalho a tarefa requer no total. O valor padrão é 1.
+value: number - especifica quanto da tarefa foi concluída.
+ -->

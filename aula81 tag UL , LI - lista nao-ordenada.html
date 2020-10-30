@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 81 Tag < UL> < LI> </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="HRsniper">
+
+    <style>
+        /* formatar o tipo do ul e para ol */
+        ul {
+            list-style-type: square;
+        }
+        ul ul {
+            list-style-type: circle;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="links">
+        <h5>Links de Referência:</h5>
+        <p>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank"><abbr title="W3 Schools">HTML Tags</abbr></a>
+            <a href="https://www.w3.org/2009/cheatsheet" target="_blank"><abbr title="W3C">HTML Tags Cheatsheet</abbr></a>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/" target="_blank"><abbr title="Mozilla Dev">Tags Mozilla Dev</abbr></a>
+        </p>
+    </div>
+
+    <h4>
+        A < ul > tag define uma lista não ordenada (com marcadores).
+        Use a tag < li> para definir itens da lista.
+    </h4>
+    <h4>
+        A tag < li> define um item da lista.
+        A tag < li> é usada em listas ordenadas ( < ol> ), em listas não ordenadas ( < ul> ) e em listas de menus ( < menu> ).
+    </h4>
+
+    <ul>
+        <li>html5</li>
+        <ul>
+            <li>document</li>
+        </ul>
+        <li>css3</li>
+        <li>c++</li>
+        <li>javascript</li>
+    </ul>
+
+</body>
+
+</html>
+
+<!--
+ul
+     display: block
+     categoria: fluxo
+     contido: fluxo
+     filhos: li
+
+ -->
+ <!-- 
+li
+    value: number - especifica o valor de um item da lista. Os seguintes itens da lista serão incrementados a partir desse número (apenas para listas <ol>).
+  -->

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 66 Tag < RUBY> </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="HRsniper">
+
+    <style>
+        ruby {
+            font-size: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="links">
+        <h5>Links de Referência:</h5>
+        <p>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank"><abbr title="W3 Schools">HTML Tags</abbr></a>
+            <a href="https://www.w3.org/2009/cheatsheet" target="_blank"><abbr title="W3C">HTML Tags Cheatsheet</abbr></a>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/" target="_blank"><abbr title="Mozilla Dev">Tags Mozilla Dev</abbr></a>
+        </p>
+    </div>
+
+    <h4>
+        A < ruby> tag especifica uma anotação ruby.
+        Uma anotação ruby ​​é um pequeno texto extra anexado ao texto principal para indicar a pronúncia ou o significado dos caracteres correspondentes. Esse tipo de anotação é frequentemente usado em publicações japonesas.
+    </h4>
+    <h4>
+        A < rp> tag pode ser usada para fornecer parênteses em torno de um texto em rubi, a ser mostrado por navegadores que não suportam anotações em rubi.
+    </h4>
+    <h4>
+        A < rt> tag define uma explicação ou pronúncia de caracteres (para tipografia do Leste Asiático) em uma anotação em rubi.
+    </h4>
+
+    <ruby>
+       アニメ <rt>Animes</rt>       
+    </ruby>
+
+    <br>
+    
+    <ruby>
+        アニメ <rt><rp>(</rp>Animes<rp>)</rp></rt>        
+    </ruby>
+
+</body>
+
+</html>
+
+<!--
+     display: inline
+     categoria: fluxo e fraseado
+     contido: fraseado
+     filhos: rp e rt
+
+ -->

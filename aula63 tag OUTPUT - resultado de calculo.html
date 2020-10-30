@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 63 Tag < OUTPUT> </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="HRsniper">
+
+</head>
+
+<body>
+
+    <div id="links">
+        <h5>Links de Referência:</h5>
+        <p>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank"><abbr title="W3 Schools">HTML Tags</abbr></a>
+            <a href="https://www.w3.org/2009/cheatsheet" target="_blank"><abbr title="W3C">HTML Tags Cheatsheet</abbr></a>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/" target="_blank"><abbr title="Mozilla Dev">Tags Mozilla Dev</abbr></a>
+        </p>
+    </div>
+
+    <h4>
+        A < output > tag representa o resultado de um cálculo (como o realizado por um script).
+    </h4>
+
+    <form oninput="resultado.value=parseInt(numero1.value)+parseInt(numero2.value)" name="formC">
+        <p>0<input type="range" name="rang" id="numero1" value="0">100</p>
+        <p>+</p>
+        <input type="number" name="num" id="numero2" value="0">
+        <p>=</p>
+        <output name="resultado" for="numero1 numero2"></output>
+    </form>
+
+</body>
+
+</html>
+
+<!--
+     display: null
+     categoria: 
+     contido: 
+     filhos: 
+
+for: element_id - Especifica o relacionamento entre o resultado do cálculo e os elementos usados no cálculo.
+form: form_id - Especifica a qual formulário o elemento de saída pertence.
+name: name - Especifica um nome para o elemento de saída.
+ -->

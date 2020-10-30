@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 32 Form</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        form {
+            background-color: hsl(0, 0%, 95%);
+        }
+
+        .input {
+            display: block;
+        }
+
+        .marginT {
+            margin-top: 10px;
+        }
+
+        .marginB {
+            margin-bottom: 10px;
+        }
+
+        .image {
+            width: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="links">
+        <h5>Links de Referência:</h5>
+        <p>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank"><abbr title="W3 Schools">HTML
+                    Tags</abbr></a>
+            <a href="https://www.w3.org/2009/cheatsheet" target="_blank"><abbr title="W3C">HTML Tags
+                    Cheatsheet</abbr></a>
+        </p>
+    </div>
+
+    <br>
+
+    <form action="#" name="form_FORM" method="GET">
+        <label for="forTEL">Telefone:</label>
+        <input class="input marginB" type="tel" name="form_TEL" id="forTEL" title="Telefone_Pop-Up" pattern="\([0-9{2}]\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(xx)9xxxx-xxxx">
+        <input class="marginB" type="submit" value="Enviar">
+        <br>
+        <label for="forNUM">Number:</label>
+        <input class="input marginB" type="number" name="form_NUM" id="forNUM" step="5" min="-1" max="20">
+        <br>
+        <label for="forSEA">Search:</label>
+        <input class="input marginB" type="search" name="form_SEA" id="forSEA">
+    </form>
+
+
+</body>
+
+</html>
+<!-- 
+    input type
+number: define um campo para inserir um número.
+Use os seguintes atributos para especificar restrições:
+max - especifica o valor máximo permitido
+min - especifica o valor mínimo permitido
+step - especifica os intervalos de número legal
+value - especifica o valor padrão
+
+tel: define um campo para inserir um número de telefone.pattern para definir um formato de numero
+Nota: Os navegadores que não suportam "tel" voltam a ser uma entrada "texto" padrão.
+
+rearch: define um campo de texto para inserir uma sequência de pesquisa.
+Nota: Lembre-se de definir um nome para o campo de pesquisa, caso contrário nada será enviado. O nome mais comum para entradas de pesquisa é q.
+
+pattern: regexp - Especifica uma expressão regular na qual o valor de um elemento <input> é verificado.
+Nota: O atributo padrão funciona com os seguintes tipos de entrada: texto, data, pesquisa, URL, tel, email e senha.
+Dica: Use o atributo global title para descrever o padrão para ajudar o usuário. fica uma pop-up tipo abbr quando passa o mouse emcima
+usa expressões regulares do javascript  \[tipo de digitos]{quatidade de digitos}\
+
+placeholder: text - Especifica uma dica curta que descreve o valor esperado de um elemento <input>.
+Nota: O atributo placeholder funciona com os seguintes tipos de entrada: texto, pesquisa, URL, tel, email e senha.
+
+value :texto a ser mostrado no navegador para o batao
+
+Nota: O atributo value não pode ser usado com <input type = "file">.
+ -->
